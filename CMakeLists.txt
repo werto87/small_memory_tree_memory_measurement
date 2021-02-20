@@ -1,6 +1,6 @@
  #set(CMAKE_CXX_COMPILER "/usr/local/bin/clang++")
  #set(CMAKE_C_COMPILER "/usr/local/bin/clang")
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fcoroutines")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fcoroutines")
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -fuse-ld=lld")
 #-fcoroutines-ts -lc++experimental")
@@ -19,7 +19,6 @@ cmake_policy(SET CMP0015 NEW)
 ########## enable cache system
 include(cmake/Cache.cmake)
 
-#set(CMAKE_EXECUTABLE_SUFFIX ".html")
 ########## link against the libs to apply the configurations to the target
 # compiler warnings
 set(PROJECT_WARNINGS project_warning)
@@ -47,6 +46,9 @@ include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
 
+set(TARGET_NAME project)
+add_executable(${TARGET_NAME} "main.cxx")
+
 ####### create executable
 OPTION(BUILD_TESTS "enable tests" ON)
 IF(BUILD_TESTS)
@@ -54,8 +56,7 @@ IF(BUILD_TESTS)
     add_subdirectory(test) 
 ENDIF(BUILD_TESTS)
 
-set(TARGET_NAME project)
-add_executable(${TARGET_NAME} "main.cxx")
+
 
 ######## add sub dir
 #add_subdirectory(src) 
