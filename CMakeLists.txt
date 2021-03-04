@@ -1,11 +1,6 @@
- #set(CMAKE_CXX_COMPILER "/usr/local/bin/clang++")
- #set(CMAKE_C_COMPILER "/usr/local/bin/clang")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fcoroutines")
-#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -fuse-ld=lld")
-#-fcoroutines-ts -lc++experimental")
-
-#set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread -v")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -fuse-ld=lld -fcoroutines")
+#set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -fcoroutines -v")
 cmake_minimum_required(VERSION 3.17)
 project(project VERSION 1.0.0
   DESCRIPTION project
@@ -47,7 +42,25 @@ conan_basic_setup(TARGETS)
 
 
 set(TARGET_NAME project)
-add_executable(${TARGET_NAME} "main.cxx")
+add_executable(${TARGET_NAME})
+
+######## add sub dir
+add_subdirectory(src) 
+
+
+####### link
+target_include_directories(${TARGET_NAME} PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
+target_include_directories(${TARGET_NAME} PRIVATE
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+  $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
+  )
+  
+
+target_link_libraries(${TARGET_NAME} PRIVATE
+${PROJECT_WARNINGS}
+${PROJECT_OPTIONS}
+
+)
 
 ####### create executable
 OPTION(BUILD_TESTS "enable tests" ON)
@@ -56,28 +69,18 @@ IF(BUILD_TESTS)
     add_subdirectory(test) 
 ENDIF(BUILD_TESTS)
 
-
-
-######## add sub dir
-add_subdirectory(src) 
+# add main after  add_subdirectory(test) so we can take the sources from ${TARGET_NAME} and dont have to remove main.cxx from that list
+target_sources(${TARGET_NAME} PRIVATE 
+"main.cxx"
+)
+ 
+if (CMAKE_BINARY_DIR)
+target_compile_definitions(${TARGET_NAME} PRIVATE PATH_TO_BINARY="${CMAKE_BINARY_DIR}")
+endif()
 
 ####### include what you use
 #find_program(iwyu_path NAMES include-what-you-use iwyu)
 #set_property(TARGET ${TARGET_NAME} PROPERTY CXX_INCLUDE_WHAT_YOU_USE ${iwyu_path})
-
-
-####### link
-
-target_include_directories(${TARGET_NAME} PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
-target_include_directories(${TARGET_NAME} PRIVATE
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
-  )
-  
-
-target_link_libraries(${TARGET_NAME} PRIVATE ${PROJECT_WARNINGS} ${PROJECT_OPTIONS}
-)
-
 
 
 #print all variables used in cmake

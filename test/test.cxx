@@ -2,6 +2,18 @@
 
 namespace test
 {
-TEST_CASE ("discribe the test") { REQUIRE (true); }
+
+SCENARIO ("SCENARIO")
+{
+  GIVEN ("GIVEN")
+  {
+
+    WHEN ("WHEN")
+    {
+
+      THEN ("THEN") {}
+    }
+  }
+}
 
 }
