@@ -1,8 +1,8 @@
+#include "src/hello.hxx"
 #include <iostream>
-
 int
 main ()
 {
-  std::cout << "hello world123!" << std::endl;
+  std::cout << helloWorld () << std::endl;
   return 0;
 }

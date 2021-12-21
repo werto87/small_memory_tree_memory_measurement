@@ -34,7 +34,7 @@ ${PROJECT_OPTIONS}
 )
 target_compile_definitions(${TARGET_NAME_LIB} PUBLIC "$<$<CONFIG:DEBUG>:DEBUG>")
 target_compile_definitions(${TARGET_NAME_LIB} PUBLIC _LIBCPP_ENABLE_CXX20_REMOVED_TYPE_TRAITS)
-# target_compile_definitions(${TARGET_NAME_LIB} PUBLIC BOOST_ASIO_ENABLE_HANDLER_TRACKING)
+
 
 # create executable
 OPTION(BUILD_TESTS "enable tests" OFF)
