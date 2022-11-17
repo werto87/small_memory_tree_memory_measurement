@@ -34,14 +34,8 @@ ${PROJECT_OPTIONS}
 )
 target_compile_definitions(${TARGET_NAME_LIB} PUBLIC "$<$<CONFIG:DEBUG>:DEBUG>")
 target_compile_definitions(${TARGET_NAME_LIB} PUBLIC _LIBCPP_ENABLE_CXX20_REMOVED_TYPE_TRAITS)
-
-
-# create executable
-OPTION(BUILD_TESTS "enable tests" OFF)
-IF(BUILD_TESTS)
-    enable_testing()
-    add_subdirectory(test) 
-ENDIF(BUILD_TESTS)
+enable_testing()
+add_subdirectory(test)
 set(TARGET_NAME project)
 add_executable(${TARGET_NAME}  
   main.cxx
