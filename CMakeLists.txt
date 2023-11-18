@@ -1,10 +1,11 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.27)
 project(project VERSION 1.0.0
   DESCRIPTION project
   LANGUAGES CXX
   ) 
 cmake_policy(SET CMP0015 NEW)
 include(cmake/Cache.cmake)
+find_package(Boost REQUIRED)
 set(PROJECT_WARNINGS project_warning)
 add_library(${PROJECT_WARNINGS} INTERFACE)
 include(cmake/CompilerWarnings.cmake)
@@ -15,8 +16,6 @@ target_compile_features(${PROJECT_OPTIONS} INTERFACE cxx_std_20)
 include(cmake/StaticAnalyzers.cmake) 
 include(cmake/Sanitizers.cmake)
 enable_sanitizers(${PROJECT_OPTIONS})
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup(TARGETS)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(TARGET_NAME_LIB project_lib)
 add_library(${TARGET_NAME_LIB} OBJECT)
@@ -29,7 +28,7 @@ target_include_directories(${TARGET_NAME_LIB} PUBLIC
 target_link_libraries(${TARGET_NAME_LIB} PUBLIC
 ${PROJECT_WARNINGS}
 ${PROJECT_OPTIONS}
-  # CONAN_PKG::boost
+        Boost::boost
 
 )
 target_compile_definitions(${TARGET_NAME_LIB} PUBLIC "$<$<CONFIG:DEBUG>:DEBUG>")
