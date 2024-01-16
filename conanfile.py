@@ -1,7 +1,7 @@
 from conan import ConanFile
 
 
-class CompressorRecipe(ConanFile):
+class Project(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "CMakeToolchain", "CMakeDeps"
 
@@ -14,12 +14,3 @@ class CompressorRecipe(ConanFile):
     def requirements(self):
         self.requires("catch2/2.13.7")
         self.requires("boost/1.83.0", force=True)
-
-
-
-
-
-
-
-    # def build_requirements(self):
-    #     self.tool_requires("cmake/3.22.6")
