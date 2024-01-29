@@ -13,14 +13,14 @@ add_library(myproject::cxx_template ALIAS cxx_template)
 
 find_package(st_tree)
 
-target_link_libraries(cxx_template INTERFACE
+target_link_libraries(cxx_template PUBLIC
         st_tree::st_tree
         )
 
 target_include_directories(cxx_template INTERFACE $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
         $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/include>)
 
-target_compile_features(cxx_template INTERFACE cxx_std_20)
+target_compile_features(cxx_template PUBLIC cxx_std_20)
 
 set_target_properties(
         cxx_template
