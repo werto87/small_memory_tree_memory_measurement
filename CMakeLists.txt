@@ -1,44 +1,21 @@
-cmake_minimum_required(VERSION 3.27)
-project(project VERSION 1.0.0
-  DESCRIPTION project
-  LANGUAGES CXX
-  ) 
-cmake_policy(SET CMP0015 NEW)
-include(cmake/Cache.cmake)
-find_package(Boost REQUIRED)
-set(PROJECT_WARNINGS project_warning)
-add_library(${PROJECT_WARNINGS} INTERFACE)
-include(cmake/CompilerWarnings.cmake)
-set_project_warnings(${PROJECT_WARNINGS})
-set(PROJECT_OPTIONS project_options)
-add_library(${PROJECT_OPTIONS} INTERFACE)
-target_compile_features(${PROJECT_OPTIONS} INTERFACE cxx_std_20)
-include(cmake/StaticAnalyzers.cmake) 
-include(cmake/Sanitizers.cmake)
-enable_sanitizers(${PROJECT_OPTIONS})
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(TARGET_NAME_LIB project_lib)
-add_library(${TARGET_NAME_LIB} OBJECT)
-add_subdirectory(src) 
-target_include_directories(${TARGET_NAME_LIB} PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
-target_include_directories(${TARGET_NAME_LIB} PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
-  )
-target_link_libraries(${TARGET_NAME_LIB} PUBLIC
-${PROJECT_WARNINGS}
-${PROJECT_OPTIONS}
-        Boost::boost
-
-)
-target_compile_definitions(${TARGET_NAME_LIB} PUBLIC "$<$<CONFIG:DEBUG>:DEBUG>")
-target_compile_definitions(${TARGET_NAME_LIB} PUBLIC _LIBCPP_ENABLE_CXX20_REMOVED_TYPE_TRAITS)
-enable_testing()
-add_subdirectory(test)
-set(TARGET_NAME project)
-add_executable(${TARGET_NAME}  
-  main.cxx
-)
-target_link_libraries(${TARGET_NAME} PUBLIC
-  ${TARGET_NAME_LIB}
-)
+cmake_minimum_required(VERSION 3.15.7)
+if (NOT DEFINED CMAKE_CXX_STANDARD) # Only set the cxx_standard if it is not set by someone else
+    set(CMAKE_CXX_STANDARD 20)
+endif ()
+project(
+        myproject
+        VERSION 0.0.1
+        LANGUAGES CXX C)
+include(cmake/PreventInSourceBuilds.cmake)
+include(ProjectOptions.cmake)
+myproject_setup_options()
+myproject_local_options()
+target_compile_features(myproject_options INTERFACE cxx_std_${CMAKE_CXX_STANDARD})
+add_library(myproject::myproject_options ALIAS myproject_options)
+add_library(myproject::myproject_warnings ALIAS myproject_warnings)
+add_subdirectory(small_memory_tree)
+OPTION(BUILD_TESTS "enable tests" OFF)
+IF (BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(test)
+ENDIF (BUILD_TESTS)

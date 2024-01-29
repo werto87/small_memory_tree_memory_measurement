@@ -1,4 +1,4 @@
-#include "hello.hxx"
+#include "src/hello.hxx"
 
 std::string
 helloWorld ()
