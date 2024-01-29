@@ -1,17 +1,14 @@
-set(TEST_TARGET_NAME _test)
-add_executable(${TEST_TARGET_NAME} 
-  hello.cxx
-)
-find_package(Catch2 REQUIRED)
-target_link_libraries(${TEST_TARGET_NAME}
-  ${TARGET_NAME_LIB}
+add_executable(_test
+        hello.cxx
+        )
+find_package(Catch2)
+target_link_libraries(_test
+        myproject_options
+        myproject_warnings
+        cxx_template
         Catch2::Catch2WithMain
-)
-target_include_directories(${TEST_TARGET_NAME} PRIVATE
-  ${CMAKE_CURRENT_SOURCE_DIR}
-  ${CMAKE_SOURCE_DIR}
-)
+        )
+target_include_directories(_test PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_SOURCE_DIR})
 
-add_test(NAME ${TEST_TARGET_NAME}
-  COMMAND ${TEST_TARGET_NAME} -r junit
-) 
+add_test(NAME _test
+        COMMAND _test -r junit)

@@ -12,8 +12,5 @@ class Project(ConanFile):
         self.options["boost"].header_only = True
 
     def requirements(self):
-        # self.requires("catch2/2.13.7")
-        # self.requires("boost/1.83.0", force=True)
-        # self.requires("confu_json/1.0.0")
-        # self.requires("soci/4.0.3")
+        self.requires("catch2/2.13.7")
         self.requires("st_tree/1.2.2")
