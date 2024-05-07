@@ -1,0 +1,856 @@
+desc: --stacks=no --heap=yes --massif-out-file=massif.out.run_main32
+cmd: /home/walde/workspace/cxx/cxx_template/build/debug-clang/run_main32
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1889509
+mem_heap_B=104
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=1893389
+mem_heap_B=240
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=1898068
+mem_heap_B=280
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1901055
+mem_heap_B=280
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=detailed
+n1: 280 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 280 0x10ACF4: void* std::__1::__libcpp_operator_new[abi:v160006]<unsigned long>(unsigned long) (new:266)
+  n3: 280 0x10AC7C: std::__1::__libcpp_allocate[abi:v160006](unsigned long, unsigned long) (new:292)
+   n1: 208 0x10AB84: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> >::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n2: 208 0x10AA41: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::_new_node() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:289)
+     n1: 104 0x10A9C2: void st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::emplace<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:194)
+      n1: 104 0x10A42C: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:200)
+       n0: 104 0x10A2F0: main (main32.cxx:7)
+     n1: 104 0x1132C0: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:413)
+      n1: 104 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+       n0: 104 0x10A32B: main (main32.cxx:10)
+   n1: 64 0x110207: std::__1::allocator<unsigned long>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 64 0x10FECC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned long> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<unsigned long> >(std::__1::allocator<unsigned long>&, unsigned long) (allocate_at_least.h:55)
+     n1: 64 0x112095: std::__1::__split_buffer<unsigned long, std::__1::allocator<unsigned long>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<unsigned long>&) (__split_buffer:323)
+      n1: 64 0x111E70: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::__append(unsigned long, unsigned long const&) (vector:1066)
+       n2: 64 0x111D87: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::resize(unsigned long, unsigned long const&) (vector:1922)
+        n2: 32 0x10AADC: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:72)
+         n1: 16 0x10A9FD: void st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::emplace<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:197)
+          n1: 16 0x10A42C: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:200)
+           n0: 16 0x10A2F0: main (main32.cxx:7)
+         n1: 16 0x1132EC: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:415)
+          n1: 16 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+           n0: 16 0x10A32B: main (main32.cxx:10)
+        n1: 32 0x111CB1: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> > const&, unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:86)
+         n1: 32 0x10CA9D: st_tree::detail::node_base<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > >::_graft(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:239)
+          n1: 32 0x11330E: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:417)
+           n1: 32 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+            n0: 32 0x10A32B: main (main32.cxx:10)
+   n1: 8 0x110B97: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 8 0x110ACC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >(std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&, unsigned long) (allocate_at_least.h:55)
+     n1: 8 0x110715: std::__1::__split_buffer<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&) (__split_buffer:323)
+      n1: 8 0x111A99: void std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::__push_back_slow_path<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1538)
+       n1: 8 0x10C8A3: std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::push_back[abi:v160006](st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1556)
+        n1: 8 0x113301: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:416)
+         n1: 8 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+          n0: 8 0x10A32B: main (main32.cxx:10)
+#-----------
+snapshot=5
+#-----------
+time=1904866
+mem_heap_B=400
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=1908330
+mem_heap_B=512
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1910718
+mem_heap_B=544
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=1914362
+mem_heap_B=648
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1916906
+mem_heap_B=752
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=1920209
+mem_heap_B=832
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=1924213
+mem_heap_B=920
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=1927672
+mem_heap_B=1040
+mem_heap_extra_B=216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=1931131
+mem_heap_B=1160
+mem_heap_extra_B=240
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=1933675
+mem_heap_B=1264
+mem_heap_extra_B=256
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=1936978
+mem_heap_B=1408
+mem_heap_extra_B=272
+mem_stacks_B=0
+heap_tree=detailed
+n1: 1408 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1408 0x10ACF4: void* std::__1::__libcpp_operator_new[abi:v160006]<unsigned long>(unsigned long) (new:266)
+  n3: 1408 0x10AC7C: std::__1::__libcpp_allocate[abi:v160006](unsigned long, unsigned long) (new:292)
+   n1: 1040 0x10AB84: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> >::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n2: 1040 0x10AA41: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::_new_node() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:289)
+     n1: 936 0x1132C0: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:413)
+      n1: 936 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+       n0: 936 0x10A32B: main (main32.cxx:10)
+     n1: 104 0x10A9C2: void st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::emplace<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:194)
+      n1: 104 0x10A42C: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:200)
+       n0: 104 0x10A2F0: main (main32.cxx:7)
+   n1: 192 0x110B97: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 192 0x110ACC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >(std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&, unsigned long) (allocate_at_least.h:55)
+     n1: 192 0x110715: std::__1::__split_buffer<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&) (__split_buffer:323)
+      n1: 192 0x111A99: void std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::__push_back_slow_path<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1538)
+       n1: 192 0x10C8A3: std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::push_back[abi:v160006](st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1556)
+        n1: 192 0x113301: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:416)
+         n1: 192 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+          n0: 192 0x10A32B: main (main32.cxx:10)
+   n1: 176 0x110207: std::__1::allocator<unsigned long>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 176 0x10FECC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned long> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<unsigned long> >(std::__1::allocator<unsigned long>&, unsigned long) (allocate_at_least.h:55)
+     n1: 176 0x112095: std::__1::__split_buffer<unsigned long, std::__1::allocator<unsigned long>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<unsigned long>&) (__split_buffer:323)
+      n1: 176 0x111E70: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::__append(unsigned long, unsigned long const&) (vector:1066)
+       n2: 176 0x111D87: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::resize(unsigned long, unsigned long const&) (vector:1922)
+        n2: 144 0x10AADC: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:72)
+         n1: 144 0x1132EC: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:415)
+          n1: 144 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+           n0: 144 0x10A32B: main (main32.cxx:10)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 32 0x111CB1: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> > const&, unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:86)
+         n1: 32 0x10CA9D: st_tree::detail::node_base<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > >::_graft(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:239)
+          n1: 32 0x11330E: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:417)
+           n1: 32 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+            n0: 32 0x10A32B: main (main32.cxx:10)
+#-----------
+snapshot=16
+#-----------
+time=1940206
+mem_heap_B=1408
+mem_heap_extra_B=272
+mem_stacks_B=0
+heap_tree=detailed
+n1: 1408 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1408 0x10ACF4: void* std::__1::__libcpp_operator_new[abi:v160006]<unsigned long>(unsigned long) (new:266)
+  n3: 1408 0x10AC7C: std::__1::__libcpp_allocate[abi:v160006](unsigned long, unsigned long) (new:292)
+   n1: 1040 0x10AB84: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> >::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n2: 1040 0x10AA41: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::_new_node() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:289)
+     n1: 936 0x1132C0: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:413)
+      n1: 936 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+       n0: 936 0x10A32B: main (main32.cxx:10)
+     n1: 104 0x10A9C2: void st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::emplace<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:194)
+      n1: 104 0x10A42C: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:200)
+       n0: 104 0x10A2F0: main (main32.cxx:7)
+   n1: 192 0x110B97: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 192 0x110ACC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >(std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&, unsigned long) (allocate_at_least.h:55)
+     n1: 192 0x110715: std::__1::__split_buffer<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&) (__split_buffer:323)
+      n1: 192 0x111A99: void std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::__push_back_slow_path<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1538)
+       n1: 192 0x10C8A3: std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::push_back[abi:v160006](st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1556)
+        n1: 192 0x113301: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:416)
+         n1: 192 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+          n0: 192 0x10A32B: main (main32.cxx:10)
+   n1: 176 0x110207: std::__1::allocator<unsigned long>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 176 0x10FECC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned long> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<unsigned long> >(std::__1::allocator<unsigned long>&, unsigned long) (allocate_at_least.h:55)
+     n1: 176 0x112095: std::__1::__split_buffer<unsigned long, std::__1::allocator<unsigned long>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<unsigned long>&) (__split_buffer:323)
+      n1: 176 0x111E70: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::__append(unsigned long, unsigned long const&) (vector:1066)
+       n2: 176 0x111D87: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::resize(unsigned long, unsigned long const&) (vector:1922)
+        n2: 144 0x10AADC: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:72)
+         n1: 144 0x1132EC: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:415)
+          n1: 144 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+           n0: 144 0x10A32B: main (main32.cxx:10)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 32 0x111CB1: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> > const&, unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:86)
+         n1: 32 0x10CA9D: st_tree::detail::node_base<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > >::_graft(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:239)
+          n1: 32 0x11330E: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:417)
+           n1: 32 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+            n0: 32 0x10A32B: main (main32.cxx:10)
+#-----------
+snapshot=17
+#-----------
+time=1941702
+mem_heap_B=1464
+mem_heap_extra_B=288
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=1945161
+mem_heap_B=1584
+mem_heap_extra_B=312
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=1948620
+mem_heap_B=1704
+mem_heap_extra_B=336
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1952079
+mem_heap_B=1824
+mem_heap_extra_B=360
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=1955538
+mem_heap_B=1944
+mem_heap_extra_B=384
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=1958997
+mem_heap_B=2064
+mem_heap_extra_B=408
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=1962456
+mem_heap_B=2184
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1965000
+mem_heap_B=2288
+mem_heap_extra_B=448
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1968303
+mem_heap_B=2560
+mem_heap_extra_B=464
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1972971
+mem_heap_B=2560
+mem_heap_extra_B=464
+mem_stacks_B=0
+heap_tree=detailed
+n1: 2560 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2560 0x10ACF4: void* std::__1::__libcpp_operator_new[abi:v160006]<unsigned long>(unsigned long) (new:266)
+  n3: 2560 0x10AC7C: std::__1::__libcpp_allocate[abi:v160006](unsigned long, unsigned long) (new:292)
+   n1: 1872 0x10AB84: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> >::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n2: 1872 0x10AA41: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::_new_node() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:289)
+     n1: 1768 0x1132C0: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:413)
+      n1: 1768 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+       n0: 1768 0x10A32B: main (main32.cxx:10)
+     n1: 104 0x10A9C2: void st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::emplace<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:194)
+      n1: 104 0x10A42C: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:200)
+       n0: 104 0x10A2F0: main (main32.cxx:7)
+   n1: 384 0x110B97: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 384 0x110ACC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >(std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&, unsigned long) (allocate_at_least.h:55)
+     n1: 384 0x110715: std::__1::__split_buffer<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&) (__split_buffer:323)
+      n1: 384 0x111A99: void std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::__push_back_slow_path<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1538)
+       n1: 384 0x10C8A3: std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::push_back[abi:v160006](st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1556)
+        n1: 384 0x113301: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:416)
+         n1: 384 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+          n0: 384 0x10A32B: main (main32.cxx:10)
+   n1: 304 0x110207: std::__1::allocator<unsigned long>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 304 0x10FECC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned long> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<unsigned long> >(std::__1::allocator<unsigned long>&, unsigned long) (allocate_at_least.h:55)
+     n1: 304 0x112095: std::__1::__split_buffer<unsigned long, std::__1::allocator<unsigned long>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<unsigned long>&) (__split_buffer:323)
+      n1: 304 0x111E70: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::__append(unsigned long, unsigned long const&) (vector:1066)
+       n2: 304 0x111D87: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::resize(unsigned long, unsigned long const&) (vector:1922)
+        n2: 272 0x10AADC: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:72)
+         n1: 272 0x1132EC: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:415)
+          n1: 272 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+           n0: 272 0x10A32B: main (main32.cxx:10)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 32 0x111CB1: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> > const&, unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:86)
+         n1: 32 0x10CA9D: st_tree::detail::node_base<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > >::_graft(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:239)
+          n1: 32 0x11330E: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:417)
+           n1: 32 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+            n0: 32 0x10A32B: main (main32.cxx:10)
+#-----------
+snapshot=27
+#-----------
+time=1974467
+mem_heap_B=2552
+mem_heap_extra_B=496
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1977926
+mem_heap_B=2672
+mem_heap_extra_B=520
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1981385
+mem_heap_B=2792
+mem_heap_extra_B=544
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1984844
+mem_heap_B=2912
+mem_heap_extra_B=568
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=1988303
+mem_heap_B=3032
+mem_heap_extra_B=592
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1991762
+mem_heap_B=3152
+mem_heap_extra_B=616
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=1995221
+mem_heap_B=3272
+mem_heap_extra_B=640
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1998680
+mem_heap_B=3392
+mem_heap_extra_B=664
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=2002139
+mem_heap_B=3512
+mem_heap_extra_B=688
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2005598
+mem_heap_B=3632
+mem_heap_extra_B=712
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=2009057
+mem_heap_B=3752
+mem_heap_extra_B=736
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=2012516
+mem_heap_B=3872
+mem_heap_extra_B=760
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=2015975
+mem_heap_B=3992
+mem_heap_extra_B=784
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2019434
+mem_heap_B=4112
+mem_heap_extra_B=808
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=2022893
+mem_heap_B=4232
+mem_heap_extra_B=832
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2026296
+mem_heap_B=4240
+mem_heap_extra_B=848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2028723
+mem_heap_B=4256
+mem_heap_extra_B=856
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2031527
+mem_heap_B=4280
+mem_heap_extra_B=848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2034922
+mem_heap_B=4328
+mem_heap_extra_B=848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=2039499
+mem_heap_B=4424
+mem_heap_extra_B=848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2042727
+mem_heap_B=4360
+mem_heap_extra_B=840
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2046440
+mem_heap_B=4616
+mem_heap_extra_B=848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2051108
+mem_heap_B=4616
+mem_heap_extra_B=848
+mem_stacks_B=0
+heap_tree=peak
+n1: 4616 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4616 0x10ACF4: void* std::__1::__libcpp_operator_new[abi:v160006]<unsigned long>(unsigned long) (new:266)
+  n3: 4616 0x10AC7C: std::__1::__libcpp_allocate[abi:v160006](unsigned long, unsigned long) (new:292)
+   n1: 3432 0x10AB84: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> >::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n2: 3432 0x10AA41: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::_new_node() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:289)
+     n1: 3328 0x1132C0: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:413)
+      n1: 3328 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+       n0: 3328 0x10A32B: main (main32.cxx:10)
+     n1: 104 0x10A9C2: void st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::emplace<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:194)
+      n1: 104 0x10A42C: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:200)
+       n0: 104 0x10A2F0: main (main32.cxx:7)
+   n1: 640 0x110B97: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 640 0x110ACC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >(std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&, unsigned long) (allocate_at_least.h:55)
+     n2: 640 0x110715: std::__1::__split_buffer<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&) (__split_buffer:323)
+      n1: 384 0x110419: void std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::__push_back_slow_path<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*&&) (vector:1538)
+       n1: 384 0x10E9F3: std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::push_back[abi:v160006](st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*&&) (vector:1570)
+        n1: 384 0x10B443: st_tree::detail::node_base<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > >::~node_base() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:87)
+         n1: 384 0x10A664: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::~node_raw() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:296)
+          n1: 384 0x10A824: void std::__1::__destroy_at[abi:v160006]<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, 0>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (construct_at.h:66)
+           n1: 384 0x10A804: void std::__1::destroy_at[abi:v160006]<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, 0>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (construct_at.h:101)
+            n1: 384 0x10A7B8: void std::__1::allocator_traits<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> > >::destroy[abi:v160006]<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, void, void>(std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> >&, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (allocator_traits.h:323)
+             n1: 384 0x10A774: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::_delete_node(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:295)
+              n1: 384 0x10A707: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::clear() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:207)
+               n1: 384 0x10A5EE: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::~tree() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:149)
+                n0: 384 0x10A374: main (main32.cxx:13)
+      n1: 256 0x111A99: void std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::__push_back_slow_path<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1538)
+       n1: 256 0x10C8A3: std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::push_back[abi:v160006](st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1556)
+        n1: 256 0x113301: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:416)
+         n1: 256 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+          n0: 256 0x10A32B: main (main32.cxx:10)
+   n1: 544 0x110207: std::__1::allocator<unsigned long>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 544 0x10FECC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned long> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<unsigned long> >(std::__1::allocator<unsigned long>&, unsigned long) (allocate_at_least.h:55)
+     n1: 544 0x112095: std::__1::__split_buffer<unsigned long, std::__1::allocator<unsigned long>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<unsigned long>&) (__split_buffer:323)
+      n1: 544 0x111E70: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::__append(unsigned long, unsigned long const&) (vector:1066)
+       n2: 544 0x111D87: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::resize(unsigned long, unsigned long const&) (vector:1922)
+        n2: 512 0x10AADC: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:72)
+         n1: 512 0x1132EC: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:415)
+          n1: 512 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+           n0: 512 0x10A32B: main (main32.cxx:10)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n0: 32 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=2060884
+mem_heap_B=4472
+mem_heap_extra_B=832
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2062540
+mem_heap_B=4248
+mem_heap_extra_B=792
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=2064601
+mem_heap_B=4112
+mem_heap_extra_B=760
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=2066257
+mem_heap_B=3888
+mem_heap_extra_B=720
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=2068318
+mem_heap_B=3752
+mem_heap_extra_B=672
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=2069974
+mem_heap_B=3528
+mem_heap_extra_B=632
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=2072035
+mem_heap_B=3392
+mem_heap_extra_B=600
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=2073691
+mem_heap_B=3168
+mem_heap_extra_B=560
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=2075752
+mem_heap_B=3032
+mem_heap_extra_B=528
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=2077408
+mem_heap_B=2808
+mem_heap_extra_B=488
+mem_stacks_B=0
+heap_tree=detailed
+n1: 2808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2808 0x10ACF4: void* std::__1::__libcpp_operator_new[abi:v160006]<unsigned long>(unsigned long) (new:266)
+  n3: 2808 0x10AC7C: std::__1::__libcpp_allocate[abi:v160006](unsigned long, unsigned long) (new:292)
+   n1: 1976 0x10AB84: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> >::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n2: 1976 0x10AA41: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::_new_node() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:289)
+     n1: 1872 0x1132C0: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:413)
+      n1: 1872 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+       n0: 1872 0x10A32B: main (main32.cxx:10)
+     n1: 104 0x10A9C2: void st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::emplace<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:194)
+      n1: 104 0x10A42C: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:200)
+       n0: 104 0x10A2F0: main (main32.cxx:7)
+   n1: 512 0x110B97: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 512 0x110ACC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >(std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&, unsigned long) (allocate_at_least.h:55)
+     n2: 512 0x110715: std::__1::__split_buffer<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&) (__split_buffer:323)
+      n1: 256 0x110419: void std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::__push_back_slow_path<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*&&) (vector:1538)
+       n1: 256 0x10E9F3: std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::push_back[abi:v160006](st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*&&) (vector:1570)
+        n1: 256 0x10B443: st_tree::detail::node_base<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > >::~node_base() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:87)
+         n1: 256 0x10A664: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::~node_raw() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:296)
+          n1: 256 0x10A824: void std::__1::__destroy_at[abi:v160006]<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, 0>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (construct_at.h:66)
+           n1: 256 0x10A804: void std::__1::destroy_at[abi:v160006]<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, 0>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (construct_at.h:101)
+            n1: 256 0x10A7B8: void std::__1::allocator_traits<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> > >::destroy[abi:v160006]<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, void, void>(std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> >&, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (allocator_traits.h:323)
+             n1: 256 0x10A774: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::_delete_node(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:295)
+              n1: 256 0x10A707: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::clear() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:207)
+               n1: 256 0x10A5EE: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::~tree() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:149)
+                n0: 256 0x10A374: main (main32.cxx:13)
+      n1: 256 0x111A99: void std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::__push_back_slow_path<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1538)
+       n1: 256 0x10C8A3: std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::push_back[abi:v160006](st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1556)
+        n1: 256 0x113301: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:416)
+         n1: 256 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+          n0: 256 0x10A32B: main (main32.cxx:10)
+   n1: 320 0x110207: std::__1::allocator<unsigned long>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 320 0x10FECC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned long> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<unsigned long> >(std::__1::allocator<unsigned long>&, unsigned long) (allocate_at_least.h:55)
+     n1: 320 0x112095: std::__1::__split_buffer<unsigned long, std::__1::allocator<unsigned long>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<unsigned long>&) (__split_buffer:323)
+      n1: 320 0x111E70: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::__append(unsigned long, unsigned long const&) (vector:1066)
+       n2: 320 0x111D87: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::resize(unsigned long, unsigned long const&) (vector:1922)
+        n2: 288 0x10AADC: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:72)
+         n1: 288 0x1132EC: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:415)
+          n1: 288 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+           n0: 288 0x10A32B: main (main32.cxx:10)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 32 0x111CB1: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> > const&, unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:86)
+         n1: 32 0x10CA9D: st_tree::detail::node_base<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > >::_graft(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:239)
+          n1: 32 0x11330E: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:417)
+           n1: 32 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+            n0: 32 0x10A32B: main (main32.cxx:10)
+#-----------
+snapshot=60
+#-----------
+time=2079469
+mem_heap_B=2672
+mem_heap_extra_B=456
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=2081125
+mem_heap_B=2448
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=2083186
+mem_heap_B=2312
+mem_heap_extra_B=368
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=2084842
+mem_heap_B=2088
+mem_heap_extra_B=328
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=2086903
+mem_heap_B=1952
+mem_heap_extra_B=296
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=2088559
+mem_heap_B=1728
+mem_heap_extra_B=256
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=2090620
+mem_heap_B=1592
+mem_heap_extra_B=224
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=2092276
+mem_heap_B=1368
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=2094337
+mem_heap_B=1232
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=2095993
+mem_heap_B=1008
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=detailed
+n1: 1008 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1008 0x10ACF4: void* std::__1::__libcpp_operator_new[abi:v160006]<unsigned long>(unsigned long) (new:266)
+  n3: 1008 0x10AC7C: std::__1::__libcpp_allocate[abi:v160006](unsigned long, unsigned long) (new:292)
+   n1: 512 0x110B97: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 512 0x110ACC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >(std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&, unsigned long) (allocate_at_least.h:55)
+     n2: 512 0x110715: std::__1::__split_buffer<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>&) (__split_buffer:323)
+      n1: 256 0x110419: void std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::__push_back_slow_path<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*&&) (vector:1538)
+       n1: 256 0x10E9F3: std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::push_back[abi:v160006](st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*&&) (vector:1570)
+        n1: 256 0x10B443: st_tree::detail::node_base<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > >::~node_base() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:87)
+         n1: 256 0x10A664: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::~node_raw() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:296)
+          n1: 256 0x10A824: void std::__1::__destroy_at[abi:v160006]<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, 0>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (construct_at.h:66)
+           n1: 256 0x10A804: void std::__1::destroy_at[abi:v160006]<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, 0>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (construct_at.h:101)
+            n1: 256 0x10A7B8: void std::__1::allocator_traits<std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> > >::destroy[abi:v160006]<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, void, void>(std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> >&, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (allocator_traits.h:323)
+             n1: 256 0x10A774: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::_delete_node(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:295)
+              n1: 256 0x10A707: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::clear() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:207)
+               n1: 256 0x10A5EE: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::~tree() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:149)
+                n0: 256 0x10A374: main (main32.cxx:13)
+      n1: 256 0x111A99: void std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::__push_back_slow_path<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&>(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1538)
+       n1: 256 0x10C8A3: std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> >::push_back[abi:v160006](st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>* const&) (vector:1556)
+        n1: 256 0x113301: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:416)
+         n1: 256 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+          n0: 256 0x10A32B: main (main32.cxx:10)
+   n1: 416 0x10AB84: std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long> >::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n2: 416 0x10AA41: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::_new_node() (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:289)
+     n1: 312 0x1132C0: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:413)
+      n1: 312 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+       n0: 312 0x10A32B: main (main32.cxx:10)
+     n1: 104 0x10A9C2: void st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::emplace<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:194)
+      n1: 104 0x10A42C: st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree.h:200)
+       n0: 104 0x10A2F0: main (main32.cxx:7)
+   n1: 80 0x110207: std::__1::allocator<unsigned long>::allocate[abi:v160006](unsigned long) (allocator.h:115)
+    n1: 80 0x10FECC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned long> >::pointer> std::__1::__allocate_at_least[abi:v160006]<std::__1::allocator<unsigned long> >(std::__1::allocator<unsigned long>&, unsigned long) (allocate_at_least.h:55)
+     n1: 80 0x112095: std::__1::__split_buffer<unsigned long, std::__1::allocator<unsigned long>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<unsigned long>&) (__split_buffer:323)
+      n1: 80 0x111E70: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::__append(unsigned long, unsigned long const&) (vector:1066)
+       n2: 80 0x111D87: std::__1::vector<unsigned long, std::__1::allocator<unsigned long> >::resize(unsigned long, unsigned long const&) (vector:1922)
+        n2: 48 0x10AADC: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:72)
+         n1: 48 0x1132EC: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:415)
+          n1: 48 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+           n0: 48 0x10A32B: main (main32.cxx:10)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 32 0x111CB1: st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> >::insert(st_tree::detail::max_maintainer<unsigned long, std::__1::allocator<unsigned long> > const&, unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_detail.h:86)
+         n1: 32 0x10CA9D: st_tree::detail::node_base<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>, std::__1::vector<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*, std::__1::allocator<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > >::_graft(st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:239)
+          n1: 32 0x11330E: st_tree::detail::valmap_iterator_adaptor_random<std::__1::__wrap_iter<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>**>, st_tree::detail::dref_vmap<st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>*> > st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::emplace_insert<unsigned long const&>(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:417)
+           n1: 32 0x10A5A7: st_tree::detail::node_raw<st_tree::tree<unsigned long, st_tree::raw<st_tree::arg_unused>, std::__1::allocator<unsigned long> >, unsigned long>::insert(unsigned long const&) (.conan2/p/st_tr51cfe3056171d/p/include/st_tree_nodes.h:421)
+            n0: 32 0x10A32B: main (main32.cxx:10)
+#-----------
+snapshot=70
+#-----------
+time=2098054
+mem_heap_B=872
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=2099710
+mem_heap_B=648
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=2102544
+mem_heap_B=392
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
