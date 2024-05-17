@@ -2,7 +2,7 @@
 #include <cstdint>
 #include <iostream>
 #include <small_memory_tree/smallMemoryTree.hxx>
-#include <small_memory_tree/smallMemoryTreeLotsOfChildren.hxx>
+
 #include <string>
 int
 main (int argc, char **argv)
@@ -13,7 +13,6 @@ main (int argc, char **argv)
   args
     .addNamedArgument("number-of-children").setHelp("number-of-children", "numer of children")
     .addBooleanOption("with-small-memory-tree").setHelp("with-small-memory-tree", "create small memory tree and print the size of its vectors")
-    .addBooleanOption("with-small-memory-tree-lots-of-children-data").setHelp("with-small-memory-tree-lots-of-children-data", "create small memory tree lots of children data and print the size of its vectors")
     .setGlobalHelp("smallMemoryTree memory")
     .parse(argc, argv);
   // clang-format on
@@ -44,12 +43,6 @@ main (int argc, char **argv)
       auto smallMemoryTree = small_memory_tree::SmallMemoryTree<uint8_t>{ tree, uint8_t{ 255 } };
       std::cout << "smallMemoryTree elements " << smallMemoryTree.getTreeAsVector ().size () << std::endl;
       // std::cout << "smallMemoryTree levels " << smallMemoryTree.getLevels ().size () << std::endl;
-    }
-  if (args.isSet ("with-small-memory-tree-lots-of-children-data"))
-    {
-      auto smallMemoryTreeLotsOfChildrenData = small_memory_tree::SmallMemoryTreeLotsOfChildrenData<uint8_t>{ tree };
-      std::cout << "smallMemoryTreeLotsOfChildrenData hierarchy " << smallMemoryTreeLotsOfChildrenData.hierarchy.size () << std::endl;
-      std::cout << "smallMemoryTreeLotsOfChildrenData data " << smallMemoryTreeLotsOfChildrenData.data.size () << std::endl;
     }
   return 0;
 }

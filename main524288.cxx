@@ -1,6 +1,4 @@
 #include <small_memory_tree/smallMemoryTree.hxx>
-#include <small_memory_tree/smallMemoryTreeLotsOfChildren.hxx>
-#include <st_tree.h>
 
 int
 main ()
