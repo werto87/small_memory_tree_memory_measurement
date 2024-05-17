@@ -1,0 +1,60 @@
+desc: --stacks=no --heap=yes --massif-out-file=result_small_memory_tree/massif.out.small_memory_tree4096
+cmd: /home/walde/workspace/cxx/small_memory_tree_memory_messurement/build/debug-clang/small_memory_tree4096
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1903240
+mem_heap_B=2097672
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=5312631
+mem_heap_B=2101769
+mem_heap_extra_B=39
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=5879564
+mem_heap_B=2101769
+mem_heap_extra_B=39
+mem_stacks_B=0
+heap_tree=peak
+n1: 2101769 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2101769 0x109B94: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n2: 2101769 0x109B1C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 2097672 0x109A87: std::__1::allocator<unsigned long>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 2097672 0x10985C: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned long> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<unsigned long> >(std::__1::allocator<unsigned long>&, unsigned long) (allocate_at_least.h:55)
+     n1: 2097672 0x1095FF: std::__1::vector<bool, std::__1::allocator<bool> >::__vallocate[abi:ue170006](unsigned long) (vector:2455)
+      n1: 2097672 0x109333: std::__1::vector<bool, std::__1::allocator<bool> >::vector(unsigned long) (vector:2650)
+       n0: 2097672 0x109231: main (small_memory_tree/main4096.cxx:8)
+   n0: 4097 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=5879564
+mem_heap_B=2097672
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=5879788
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

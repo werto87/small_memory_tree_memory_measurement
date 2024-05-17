@@ -21,8 +21,6 @@ if(BUILD_TESTS)
   enable_testing()
   add_subdirectory(test)
 endif(BUILD_TESTS)
-add_executable(run_main main.cxx)
-target_link_libraries(run_main cxx_template)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_custom_target(copy_compile_commands_json ALL
@@ -37,62 +35,93 @@ add_custom_command(
     "copy compile_commands.json build to compile_commands.json project root so tools can find it more easily"
 )
 
-add_executable(run_main2 main2.cxx)
-target_link_libraries(run_main2 cxx_template)
+add_executable( stlplus_tree2 stlplus_tree/main2.cxx)
+target_link_libraries( stlplus_tree2 cxx_template)
 
-add_executable(run_main4 main4.cxx)
-target_link_libraries(run_main4 cxx_template)
+add_executable( stlplus_tree4 stlplus_tree/main4.cxx)
+target_link_libraries( stlplus_tree4 cxx_template)
 
-add_executable(run_main8 main8.cxx)
-target_link_libraries(run_main8 cxx_template)
+add_executable( stlplus_tree8 stlplus_tree/main8.cxx)
+target_link_libraries( stlplus_tree8 cxx_template)
 
-add_executable(run_main16 main16.cxx)
-target_link_libraries(run_main16 cxx_template)
+add_executable( stlplus_tree16 stlplus_tree/main16.cxx)
+target_link_libraries( stlplus_tree16 cxx_template)
 
-add_executable(run_main32 main32.cxx)
-target_link_libraries(run_main32 cxx_template)
+add_executable( stlplus_tree32 stlplus_tree/main32.cxx)
+target_link_libraries( stlplus_tree32 cxx_template)
 
-add_executable(run_main64 main64.cxx)
-target_link_libraries(run_main64 cxx_template)
+add_executable( stlplus_tree64 stlplus_tree/main64.cxx)
+target_link_libraries( stlplus_tree64 cxx_template)
 
-add_executable(run_main128 main128.cxx)
-target_link_libraries(run_main128 cxx_template)
+add_executable( stlplus_tree128 stlplus_tree/main128.cxx)
+target_link_libraries( stlplus_tree128 cxx_template)
 
-add_executable(run_main256 main256.cxx)
-target_link_libraries(run_main256 cxx_template)
+add_executable( stlplus_tree256 stlplus_tree/main256.cxx)
+target_link_libraries( stlplus_tree256 cxx_template)
 
-add_executable(run_main512 main512.cxx)
-target_link_libraries(run_main512 cxx_template)
+add_executable( stlplus_tree512 stlplus_tree/main512.cxx)
+target_link_libraries( stlplus_tree512 cxx_template)
 
-add_executable(run_main1024 main1024.cxx)
-target_link_libraries(run_main1024 cxx_template)
+add_executable( stlplus_tree1024 stlplus_tree/main1024.cxx)
+target_link_libraries( stlplus_tree1024 cxx_template)
 
-add_executable(run_main2048 main2048.cxx)
-target_link_libraries(run_main2048 cxx_template)
+add_executable( stlplus_tree2048 stlplus_tree/main2048.cxx)
+target_link_libraries( stlplus_tree2048 cxx_template)
 
-add_executable(run_main4096 main4096.cxx)
-target_link_libraries(run_main4096 cxx_template)
+add_executable( stlplus_tree4096 stlplus_tree/main4096.cxx)
+target_link_libraries( stlplus_tree4096 cxx_template)
 
-add_executable(run_main8192 main8192.cxx)
-target_link_libraries(run_main8192 cxx_template)
+add_executable( stlplus_tree8192 stlplus_tree/main8192.cxx)
+target_link_libraries( stlplus_tree8192 cxx_template)
 
-add_executable(run_main16384 main16384.cxx)
-target_link_libraries(run_main16384 cxx_template)
+add_executable( stlplus_tree16384 stlplus_tree/main16384.cxx)
+target_link_libraries( stlplus_tree16384 cxx_template)
 
-add_executable(run_main32768 main32768.cxx)
-target_link_libraries(run_main32768 cxx_template)
+add_executable( stlplus_tree32768 stlplus_tree/main32768.cxx)
+target_link_libraries( stlplus_tree32768 cxx_template)
 
-add_executable(run_main65536 main65536.cxx)
-target_link_libraries(run_main65536 cxx_template)
 
-add_executable(run_main131072 main131072.cxx)
-target_link_libraries(run_main131072 cxx_template)
+add_executable( small_memory_tree2 small_memory_tree/main2.cxx)
+target_link_libraries( small_memory_tree2 cxx_template)
 
-add_executable(run_main262144 main262144.cxx)
-target_link_libraries(run_main262144 cxx_template)
+add_executable( small_memory_tree4 small_memory_tree/main4.cxx)
+target_link_libraries( small_memory_tree4 cxx_template)
 
-add_executable(run_main524288 main524288.cxx)
-target_link_libraries(run_main524288 cxx_template)
+add_executable( small_memory_tree8 small_memory_tree/main8.cxx)
+target_link_libraries( small_memory_tree8 cxx_template)
 
-add_executable(run_main1048576 main1048576.cxx)
-target_link_libraries(run_main1048576 cxx_template)
+add_executable( small_memory_tree16 small_memory_tree/main16.cxx)
+target_link_libraries( small_memory_tree16 cxx_template)
+
+add_executable( small_memory_tree32 small_memory_tree/main32.cxx)
+target_link_libraries( small_memory_tree32 cxx_template)
+
+add_executable( small_memory_tree64 small_memory_tree/main64.cxx)
+target_link_libraries( small_memory_tree64 cxx_template)
+
+add_executable( small_memory_tree128 small_memory_tree/main128.cxx)
+target_link_libraries( small_memory_tree128 cxx_template)
+
+add_executable( small_memory_tree256 small_memory_tree/main256.cxx)
+target_link_libraries( small_memory_tree256 cxx_template)
+
+add_executable( small_memory_tree512 small_memory_tree/main512.cxx)
+target_link_libraries( small_memory_tree512 cxx_template)
+
+add_executable( small_memory_tree1024 small_memory_tree/main1024.cxx)
+target_link_libraries( small_memory_tree1024 cxx_template)
+
+add_executable( small_memory_tree2048 small_memory_tree/main2048.cxx)
+target_link_libraries( small_memory_tree2048 cxx_template)
+
+add_executable( small_memory_tree4096 small_memory_tree/main4096.cxx)
+target_link_libraries( small_memory_tree4096 cxx_template)
+
+add_executable( small_memory_tree8192 small_memory_tree/main8192.cxx)
+target_link_libraries( small_memory_tree8192 cxx_template)
+
+add_executable( small_memory_tree16384 small_memory_tree/main16384.cxx)
+target_link_libraries( small_memory_tree16384 cxx_template)
+
+add_executable( small_memory_tree32768 small_memory_tree/main32768.cxx)
+target_link_libraries( small_memory_tree32768 cxx_template)

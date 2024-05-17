@@ -17,9 +17,10 @@ class Project(ConanFile):
         self.options["catch2"].with_main = True
         self.options["catch2"].with_benchmark = True
         self.options["boost"].header_only = True
+        self.options["small_memory_tree"].with_stlplus_tree = True
 
     def requirements(self):
         self.requires("catch2/2.13.7")
-        self.requires("small_memory_tree/4.1.3")
+        self.requires("small_memory_tree/5.1.0")
         self.requires("corrade/2020.06")
         # self.requires("st_tree/1.2.2",force=True)
