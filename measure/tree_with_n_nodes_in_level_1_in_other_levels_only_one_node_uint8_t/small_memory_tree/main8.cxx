@@ -5,7 +5,7 @@ int
 main ()
 {
   auto maxChildren = uint64_t{};
-  auto hierarchy = std::vector<bool> (73);
-  auto data = std::vector<uint8_t> (9);
+  auto hierarchy = std::vector<bool> (153);
+  auto data = std::vector<uint8_t> (19);
   return 0;
 }

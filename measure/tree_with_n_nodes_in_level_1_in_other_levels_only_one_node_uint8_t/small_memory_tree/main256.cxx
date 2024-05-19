@@ -6,7 +6,7 @@ int
 main ()
 {
   auto maxChildren = uint64_t{};
-  auto hierarchy = std::vector<bool> (65793);
-  auto data = std::vector<uint8_t> (257);
+  auto hierarchy = std::vector<bool> (68353);
+  auto data = std::vector<uint8_t> (267);
   return 0;
 }

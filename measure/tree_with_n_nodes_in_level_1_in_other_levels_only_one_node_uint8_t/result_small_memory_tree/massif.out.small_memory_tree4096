@@ -1,5 +1,5 @@
 desc: --stacks=no --heap=yes --massif-out-file=measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/result_small_memory_tree/massif.out.small_memory_tree4096
-cmd: /home/walde/workspace/cxx/small_memory_tree_memory_measurement/build/debug-clang/small_memory_tree_tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t4096
+cmd: build/debug-clang/small_memory_tree_tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t4096
 time_unit: i
 #-----------
 snapshot=0
@@ -12,48 +12,48 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=1903263
-mem_heap_B=2097672
+time=1903236
+mem_heap_B=2102792
 mem_heap_extra_B=16
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=5312654
-mem_heap_B=2101769
-mem_heap_extra_B=39
+time=5320947
+mem_heap_B=2106899
+mem_heap_extra_B=29
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=5879587
-mem_heap_B=2101769
-mem_heap_extra_B=39
+time=5889260
+mem_heap_B=2106899
+mem_heap_extra_B=29
 mem_stacks_B=0
 heap_tree=peak
-n1: 2101769 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 2101769 0x109B94: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n2: 2101769 0x109B1C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 2097672 0x109A87: std::__1::allocator<unsigned long>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 2097672 0x10985C: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned long> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<unsigned long> >(std::__1::allocator<unsigned long>&, unsigned long) (allocate_at_least.h:55)
-     n1: 2097672 0x1095FF: std::__1::vector<bool, std::__1::allocator<bool> >::__vallocate[abi:ue170006](unsigned long) (vector:2455)
-      n1: 2097672 0x109333: std::__1::vector<bool, std::__1::allocator<bool> >::vector(unsigned long) (vector:2650)
-       n0: 2097672 0x109231: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/small_memory_tree/main4096.cxx:8)
-   n0: 4097 in 1 place, below massif's threshold (1.00%)
+n1: 2106899 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2106899 0x109B94: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n2: 2106899 0x109B1C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 2102792 0x109A87: std::__1::allocator<unsigned long>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 2102792 0x10985C: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned long> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<unsigned long> >(std::__1::allocator<unsigned long>&, unsigned long) (allocate_at_least.h:55)
+     n1: 2102792 0x1095FF: std::__1::vector<bool, std::__1::allocator<bool> >::__vallocate[abi:ue170006](unsigned long) (vector:2455)
+      n1: 2102792 0x109333: std::__1::vector<bool, std::__1::allocator<bool> >::vector(unsigned long) (vector:2650)
+       n0: 2102792 0x109231: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/small_memory_tree/main4096.cxx:8)
+   n0: 4107 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=4
 #-----------
-time=5879587
-mem_heap_B=2097672
+time=5889260
+mem_heap_B=2102792
 mem_heap_extra_B=16
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=5879811
+time=5889484
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=0

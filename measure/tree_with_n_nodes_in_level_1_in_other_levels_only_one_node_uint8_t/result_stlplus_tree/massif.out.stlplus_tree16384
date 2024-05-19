@@ -1,5 +1,5 @@
 desc: --stacks=no --heap=yes --massif-out-file=measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/result_stlplus_tree/massif.out.stlplus_tree16384
-cmd: /home/walde/workspace/cxx/small_memory_tree_memory_measurement/build/debug-clang/stlplus_tree_tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t16384
+cmd: build/debug-clang/stlplus_tree_tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t16384
 time_unit: i
 #-----------
 snapshot=0
@@ -12,7 +12,7 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=1908571
+time=1908542
 mem_heap_B=24
 mem_heap_extra_B=16
 mem_stacks_B=0
@@ -20,7 +20,7 @@ heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=2603176
+time=2603147
 mem_heap_B=36472
 mem_heap_extra_B=10824
 mem_stacks_B=0
@@ -28,7 +28,7 @@ heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=3245550
+time=3245521
 mem_heap_B=71384
 mem_heap_extra_B=21112
 mem_stacks_B=0
@@ -56,7 +56,7 @@ n4: 71384 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=4
 #-----------
-time=4174551
+time=4174522
 mem_heap_B=121360
 mem_heap_extra_B=35064
 mem_stacks_B=0
@@ -64,7 +64,7 @@ heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=4899744
+time=4899715
 mem_heap_B=162184
 mem_heap_extra_B=48672
 mem_stacks_B=0
@@ -72,7 +72,7 @@ heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=5822376
+time=5822347
 mem_heap_B=209576
 mem_heap_extra_B=59000
 mem_stacks_B=0
@@ -80,7 +80,7 @@ heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=6492572
+time=6492543
 mem_heap_B=247304
 mem_heap_extra_B=71576
 mem_stacks_B=0
@@ -88,7 +88,7 @@ heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=7004172
+time=7004143
 mem_heap_B=276104
 mem_heap_extra_B=81176
 mem_stacks_B=0
@@ -96,7 +96,7 @@ heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=7899472
+time=7899443
 mem_heap_B=326504
 mem_heap_extra_B=97976
 mem_stacks_B=0
@@ -104,7 +104,7 @@ heap_tree=empty
 #-----------
 snapshot=10
 #-----------
-time=8663136
+time=8663107
 mem_heap_B=393360
 mem_heap_extra_B=98432
 mem_stacks_B=0
@@ -132,7 +132,7 @@ n4: 393360 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=11
 #-----------
-time=9111505
+time=9111476
 mem_heap_B=385840
 mem_heap_extra_B=106832
 mem_stacks_B=0
@@ -140,7 +140,7 @@ heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=9623105
+time=9623076
 mem_heap_B=414640
 mem_heap_extra_B=116432
 mem_stacks_B=0
@@ -148,7 +148,7 @@ heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=10134705
+time=10134676
 mem_heap_B=443440
 mem_heap_extra_B=126032
 mem_stacks_B=0
@@ -156,7 +156,7 @@ heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=10646305
+time=10646276
 mem_heap_B=472240
 mem_heap_extra_B=135632
 mem_stacks_B=0
@@ -164,7 +164,7 @@ heap_tree=empty
 #-----------
 snapshot=15
 #-----------
-time=11157905
+time=11157876
 mem_heap_B=501040
 mem_heap_extra_B=145232
 mem_stacks_B=0
@@ -172,7 +172,7 @@ heap_tree=empty
 #-----------
 snapshot=16
 #-----------
-time=11669505
+time=11669476
 mem_heap_B=529840
 mem_heap_extra_B=154832
 mem_stacks_B=0
@@ -180,7 +180,7 @@ heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=12181105
+time=12181076
 mem_heap_B=558640
 mem_heap_extra_B=164432
 mem_stacks_B=0
@@ -188,7 +188,7 @@ heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=12692705
+time=12692676
 mem_heap_B=587440
 mem_heap_extra_B=174032
 mem_stacks_B=0
@@ -196,7 +196,7 @@ heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=13204305
+time=13204276
 mem_heap_B=616240
 mem_heap_extra_B=183632
 mem_stacks_B=0
@@ -204,7 +204,7 @@ heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=13843805
+time=13843776
 mem_heap_B=652240
 mem_heap_extra_B=195632
 mem_stacks_B=0
@@ -212,7 +212,7 @@ heap_tree=empty
 #-----------
 snapshot=21
 #-----------
-time=15379282
+time=15379253
 mem_heap_B=786576
 mem_heap_extra_B=196736
 mem_stacks_B=0
@@ -240,7 +240,7 @@ n4: 786576 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=22
 #-----------
-time=16275301
+time=16275272
 mem_heap_B=771488
 mem_heap_extra_B=213536
 mem_stacks_B=0
@@ -248,7 +248,7 @@ heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=16786901
+time=16786872
 mem_heap_B=800288
 mem_heap_extra_B=223136
 mem_stacks_B=0
@@ -256,7 +256,7 @@ heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=17298501
+time=17298472
 mem_heap_B=829088
 mem_heap_extra_B=232736
 mem_stacks_B=0
@@ -264,7 +264,7 @@ heap_tree=empty
 #-----------
 snapshot=25
 #-----------
-time=17938001
+time=17937972
 mem_heap_B=865088
 mem_heap_extra_B=244736
 mem_stacks_B=0
@@ -292,7 +292,7 @@ n4: 865088 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=26
 #-----------
-time=18424021
+time=18423992
 mem_heap_B=892448
 mem_heap_extra_B=253856
 mem_stacks_B=0
@@ -300,7 +300,7 @@ heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=18910041
+time=18910012
 mem_heap_B=919808
 mem_heap_extra_B=262976
 mem_stacks_B=0
@@ -308,7 +308,7 @@ heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=19396061
+time=19396032
 mem_heap_B=947168
 mem_heap_extra_B=272096
 mem_stacks_B=0
@@ -316,7 +316,7 @@ heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=19882081
+time=19882052
 mem_heap_B=974528
 mem_heap_extra_B=281216
 mem_stacks_B=0
@@ -324,7 +324,7 @@ heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=20368101
+time=20368072
 mem_heap_B=1001888
 mem_heap_extra_B=290336
 mem_stacks_B=0
@@ -352,7 +352,7 @@ n4: 1001888 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=31
 #-----------
-time=20854121
+time=20854092
 mem_heap_B=1029248
 mem_heap_extra_B=299456
 mem_stacks_B=0
@@ -360,7 +360,7 @@ heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=21340141
+time=21340112
 mem_heap_B=1056608
 mem_heap_extra_B=308576
 mem_stacks_B=0
@@ -368,7 +368,7 @@ heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=21826161
+time=21826132
 mem_heap_B=1083968
 mem_heap_extra_B=317696
 mem_stacks_B=0
@@ -376,7 +376,7 @@ heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=22312181
+time=22312152
 mem_heap_B=1111328
 mem_heap_extra_B=326816
 mem_stacks_B=0
@@ -384,7 +384,7 @@ heap_tree=empty
 #-----------
 snapshot=35
 #-----------
-time=22798201
+time=22798172
 mem_heap_B=1138688
 mem_heap_extra_B=335936
 mem_stacks_B=0
@@ -412,7 +412,7 @@ n4: 1138688 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=36
 #-----------
-time=23284221
+time=23284192
 mem_heap_B=1166048
 mem_heap_extra_B=345056
 mem_stacks_B=0
@@ -420,7 +420,7 @@ heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=23770241
+time=23770212
 mem_heap_B=1193408
 mem_heap_extra_B=354176
 mem_stacks_B=0
@@ -428,7 +428,7 @@ heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=24256261
+time=24256232
 mem_heap_B=1220768
 mem_heap_extra_B=363296
 mem_stacks_B=0
@@ -436,7 +436,7 @@ heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=24742281
+time=24742252
 mem_heap_B=1248128
 mem_heap_extra_B=372416
 mem_stacks_B=0
@@ -444,7 +444,7 @@ heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=25228301
+time=25228272
 mem_heap_B=1275488
 mem_heap_extra_B=381536
 mem_stacks_B=0
@@ -472,7 +472,7 @@ n4: 1275488 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=41
 #-----------
-time=25895212
+time=25895183
 mem_heap_B=1311592
 mem_heap_extra_B=393712
 mem_stacks_B=0
@@ -503,7 +503,7 @@ n4: 1311592 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=42
 #-----------
-time=26380264
+time=26380235
 mem_heap_B=1241440
 mem_heap_extra_B=370272
 mem_stacks_B=0
@@ -511,7 +511,7 @@ heap_tree=empty
 #-----------
 snapshot=43
 #-----------
-time=26865316
+time=26865287
 mem_heap_B=1171312
 mem_heap_extra_B=346880
 mem_stacks_B=0
@@ -519,7 +519,7 @@ heap_tree=empty
 #-----------
 snapshot=44
 #-----------
-time=27350368
+time=27350339
 mem_heap_B=1101184
 mem_heap_extra_B=323504
 mem_stacks_B=0
@@ -527,7 +527,7 @@ heap_tree=empty
 #-----------
 snapshot=45
 #-----------
-time=27835420
+time=27835391
 mem_heap_B=1031056
 mem_heap_extra_B=300128
 mem_stacks_B=0
@@ -535,7 +535,7 @@ heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=28320472
+time=28320443
 mem_heap_B=960928
 mem_heap_extra_B=276752
 mem_stacks_B=0
@@ -566,7 +566,7 @@ n4: 960928 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=47
 #-----------
-time=28805524
+time=28805495
 mem_heap_B=890800
 mem_heap_extra_B=253376
 mem_stacks_B=0
@@ -574,7 +574,7 @@ heap_tree=empty
 #-----------
 snapshot=48
 #-----------
-time=29290576
+time=29290547
 mem_heap_B=820672
 mem_heap_extra_B=230000
 mem_stacks_B=0
@@ -582,7 +582,7 @@ heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=30018154
+time=30018125
 mem_heap_B=715480
 mem_heap_extra_B=194936
 mem_stacks_B=0
@@ -590,7 +590,7 @@ heap_tree=empty
 #-----------
 snapshot=50
 #-----------
-time=30466852
+time=30466823
 mem_heap_B=650608
 mem_heap_extra_B=173312
 mem_stacks_B=0
@@ -598,7 +598,7 @@ heap_tree=empty
 #-----------
 snapshot=51
 #-----------
-time=30915550
+time=30915521
 mem_heap_B=585736
 mem_heap_extra_B=151688
 mem_stacks_B=0
@@ -606,7 +606,7 @@ heap_tree=empty
 #-----------
 snapshot=52
 #-----------
-time=31364248
+time=31364219
 mem_heap_B=520864
 mem_heap_extra_B=130064
 mem_stacks_B=0
@@ -637,7 +637,7 @@ n4: 520864 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=53
 #-----------
-time=31812946
+time=31812917
 mem_heap_B=455992
 mem_heap_extra_B=108440
 mem_stacks_B=0
@@ -645,7 +645,7 @@ heap_tree=empty
 #-----------
 snapshot=54
 #-----------
-time=32261644
+time=32261615
 mem_heap_B=391120
 mem_heap_extra_B=86816
 mem_stacks_B=0
@@ -653,7 +653,7 @@ heap_tree=empty
 #-----------
 snapshot=55
 #-----------
-time=32710342
+time=32710313
 mem_heap_B=326248
 mem_heap_extra_B=65192
 mem_stacks_B=0
@@ -661,7 +661,7 @@ heap_tree=empty
 #-----------
 snapshot=56
 #-----------
-time=33159040
+time=33159011
 mem_heap_B=261376
 mem_heap_extra_B=43568
 mem_stacks_B=0
@@ -669,7 +669,7 @@ heap_tree=empty
 #-----------
 snapshot=57
 #-----------
-time=33607738
+time=33607709
 mem_heap_B=196504
 mem_heap_extra_B=21944
 mem_stacks_B=0
@@ -677,7 +677,7 @@ heap_tree=empty
 #-----------
 snapshot=58
 #-----------
-time=34056313
+time=34056284
 mem_heap_B=131936
 mem_heap_extra_B=416
 mem_stacks_B=0
@@ -685,7 +685,7 @@ heap_tree=empty
 #-----------
 snapshot=59
 #-----------
-time=35211533
+time=35211504
 mem_heap_B=72
 mem_heap_extra_B=24
 mem_stacks_B=0

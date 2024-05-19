@@ -1,5 +1,5 @@
 desc: --stacks=no --heap=yes --massif-out-file=measure/root_with_n_children_uint8_t/result_small_memory_tree/massif.out.small_memory_tree32
-cmd: /home/walde/workspace/cxx/small_memory_tree_memory_measurement/build/debug-clang/small_memory_tree_root_with_n_children_uint8_t32
+cmd: build/debug-clang/small_memory_tree_root_with_n_children_uint8_t32
 time_unit: i
 #-----------
 snapshot=0
@@ -12,7 +12,7 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=1903263
+time=1903203
 mem_heap_B=136
 mem_heap_extra_B=16
 mem_stacks_B=0
@@ -20,7 +20,7 @@ heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=1904158
+time=1904098
 mem_heap_B=169
 mem_heap_extra_B=39
 mem_stacks_B=0
@@ -28,7 +28,7 @@ heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=1910259
+time=1910199
 mem_heap_B=169
 mem_heap_extra_B=39
 mem_stacks_B=0
@@ -49,7 +49,7 @@ n1: 169 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
 #-----------
 snapshot=4
 #-----------
-time=1910259
+time=1910199
 mem_heap_B=136
 mem_heap_extra_B=16
 mem_stacks_B=0
@@ -57,7 +57,7 @@ heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=1910483
+time=1910423
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=0
