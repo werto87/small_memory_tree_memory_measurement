@@ -21,6 +21,6 @@ class Project(ConanFile):
 
     def requirements(self):
         self.requires("catch2/2.13.7")
-        self.requires("small_memory_tree/5.1.0")
+        self.requires("small_memory_tree/6.0.0")
         self.requires("corrade/2020.06")
         # self.requires("st_tree/1.2.2",force=True)

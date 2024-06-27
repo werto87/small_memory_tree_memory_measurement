@@ -4,8 +4,6 @@
 int
 main ()
 {
-  auto maxChildren = uint64_t{};
-  auto hierarchy = std::vector<bool> (1049601);
-  auto data = std::vector<uint8_t> (1025);
+  auto data = std::vector<small_memory_tree::Node<uint8_t, uint16_t> > (1025);
   return 0;
 }

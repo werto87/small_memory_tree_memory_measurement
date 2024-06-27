@@ -12,7 +12,7 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=1908531
+time=1902702
 mem_heap_B=24
 mem_heap_extra_B=16
 mem_stacks_B=0
@@ -20,22 +20,22 @@ heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=1909467
+time=1903638
 mem_heap_B=24
 mem_heap_extra_B=16
 mem_stacks_B=0
 heap_tree=detailed
 n1: 24 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 24 0x10CE91: stlplus::safe_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::safe_iterator(stlplus::ntree<unsigned char> const*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:277)
-  n1: 24 0x10CE5C: stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*>::ntree_iterator(stlplus::ntree<unsigned char> const*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:108)
-   n1: 24 0x10B359: stlplus::ntree<unsigned char>::root() (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:571)
-    n1: 24 0x10B0BD: stlplus::ntree<unsigned char>::erase() (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:896)
-     n1: 24 0x10A4DB: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:745)
+ n1: 24 0x10CE91: stlplus::safe_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::safe_iterator(stlplus::ntree<unsigned char> const*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:277)
+  n1: 24 0x10CE5C: stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*>::ntree_iterator(stlplus::ntree<unsigned char> const*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:108)
+   n1: 24 0x10B359: stlplus::ntree<unsigned char>::root() (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:571)
+    n1: 24 0x10B0BD: stlplus::ntree<unsigned char>::erase() (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:896)
+     n1: 24 0x10A4DB: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:745)
       n0: 24 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
 #-----------
 snapshot=3
 #-----------
-time=1909467
+time=1903638
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=0
@@ -43,7 +43,7 @@ heap_tree=empty
 #-----------
 snapshot=4
 #-----------
-time=1909511
+time=1903682
 mem_heap_B=48
 mem_heap_extra_B=8
 mem_stacks_B=0
@@ -51,7 +51,7 @@ heap_tree=empty
 #-----------
 snapshot=5
 #-----------
-time=1909570
+time=1903741
 mem_heap_B=72
 mem_heap_extra_B=24
 mem_stacks_B=0
@@ -59,7 +59,7 @@ heap_tree=empty
 #-----------
 snapshot=6
 #-----------
-time=1909769
+time=1903940
 mem_heap_B=96
 mem_heap_extra_B=40
 mem_stacks_B=0
@@ -67,7 +67,7 @@ heap_tree=empty
 #-----------
 snapshot=7
 #-----------
-time=1910280
+time=1904451
 mem_heap_B=144
 mem_heap_extra_B=48
 mem_stacks_B=0
@@ -75,7 +75,7 @@ heap_tree=empty
 #-----------
 snapshot=8
 #-----------
-time=1910339
+time=1904510
 mem_heap_B=168
 mem_heap_extra_B=64
 mem_stacks_B=0
@@ -83,7 +83,7 @@ heap_tree=empty
 #-----------
 snapshot=9
 #-----------
-time=1911235
+time=1905422
 mem_heap_B=176
 mem_heap_extra_B=80
 mem_stacks_B=0
@@ -91,41 +91,43 @@ heap_tree=empty
 #-----------
 snapshot=10
 #-----------
-time=1913684
+time=1907885
 mem_heap_B=176
 mem_heap_extra_B=80
 mem_stacks_B=0
 heap_tree=detailed
 n6: 176 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
   n0: 48 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 48 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:130)
-  n2: 48 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:29)
-   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 48 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:130)
+  n2: 48 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:29)
+   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
     n0: 24 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
-   n1: 24 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-    n1: 24 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+   n1: 24 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+    n1: 24 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
      n0: 24 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 48 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-  n1: 48 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 48 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+  n1: 48 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
    n0: 48 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 24 0x10D18D: stlplus::safe_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::safe_iterator() (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:176)
-  n1: 24 0x10A564: stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*>::ntree_iterator() (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.hpp:65)
+ n1: 24 0x10D18D: stlplus::safe_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::safe_iterator() (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:176)
+  n1: 24 0x10A564: stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*>::ntree_iterator() (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.hpp:65)
    n0: 24 0x10A2CE: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:10)
- n1: 8 0x10EA84: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 8 0x10EA2C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 8 0x10E997: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 8 0x10E8CC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:55)
-     n1: 8 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
-      n1: 8 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
-       n1: 8 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:760)
-        n1: 8 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
-         n0: 8 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
+ n1: 8 0x10EB04: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 8 0x10EAAC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 8 0x10EA17: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 8 0x10E9AC: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 8 0x10E96C: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:34)
+      n1: 8 0x10E8CC: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:43)
+       n1: 8 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
+        n1: 8 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
+         n1: 8 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:760)
+          n1: 8 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
+           n0: 8 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
  n0: 0 in 1 place, below massif's threshold (1.00%)
 #-----------
 snapshot=11
 #-----------
-time=1913684
+time=1907885
 mem_heap_B=152
 mem_heap_extra_B=64
 mem_stacks_B=0
@@ -133,7 +135,7 @@ heap_tree=empty
 #-----------
 snapshot=12
 #-----------
-time=1914225
+time=1908426
 mem_heap_B=200
 mem_heap_extra_B=72
 mem_stacks_B=0
@@ -141,7 +143,7 @@ heap_tree=empty
 #-----------
 snapshot=13
 #-----------
-time=1914284
+time=1908485
 mem_heap_B=224
 mem_heap_extra_B=88
 mem_stacks_B=0
@@ -149,7 +151,7 @@ heap_tree=empty
 #-----------
 snapshot=14
 #-----------
-time=1915180
+time=1909397
 mem_heap_B=240
 mem_heap_extra_B=96
 mem_stacks_B=0
@@ -157,38 +159,40 @@ heap_tree=empty
 #-----------
 snapshot=15
 #-----------
-time=1917767
+time=1911998
 mem_heap_B=240
 mem_heap_extra_B=96
 mem_stacks_B=0
 heap_tree=detailed
 n5: 240 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 96 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-  n1: 96 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 96 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+  n1: 96 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
    n0: 96 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 72 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:130)
-  n2: 72 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:29)
-   n1: 48 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-    n1: 48 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 72 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:130)
+  n2: 72 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:29)
+   n1: 48 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+    n1: 48 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
      n0: 48 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
-   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
     n0: 24 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
   n0: 48 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 24 0x10EA84: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 24 0x10EA2C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 24 0x10E997: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 24 0x10E8CC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:55)
-     n1: 24 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
-      n1: 24 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
-       n1: 24 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:760)
-        n1: 24 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
-         n0: 24 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
+ n1: 24 0x10EB04: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 24 0x10EAAC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 24 0x10EA17: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 24 0x10E9AC: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 24 0x10E96C: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:34)
+      n1: 24 0x10E8CC: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:43)
+       n1: 24 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
+        n1: 24 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
+         n1: 24 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:760)
+          n1: 24 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
+           n0: 24 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
  n0: 0 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=16
 #-----------
-time=1917767
+time=1911998
 mem_heap_B=232
 mem_heap_extra_B=80
 mem_stacks_B=0
@@ -196,7 +200,7 @@ heap_tree=empty
 #-----------
 snapshot=17
 #-----------
-time=1918486
+time=1912717
 mem_heap_B=280
 mem_heap_extra_B=88
 mem_stacks_B=0
@@ -204,7 +208,7 @@ heap_tree=empty
 #-----------
 snapshot=18
 #-----------
-time=1918545
+time=1912776
 mem_heap_B=304
 mem_heap_extra_B=104
 mem_stacks_B=0
@@ -212,7 +216,7 @@ heap_tree=empty
 #-----------
 snapshot=19
 #-----------
-time=1919441
+time=1913688
 mem_heap_B=336
 mem_heap_extra_B=112
 mem_stacks_B=0
@@ -220,38 +224,40 @@ heap_tree=empty
 #-----------
 snapshot=20
 #-----------
-time=1922208
+time=1916469
 mem_heap_B=336
 mem_heap_extra_B=112
 mem_stacks_B=0
 heap_tree=detailed
 n5: 336 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 144 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-  n1: 144 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 144 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+  n1: 144 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
    n0: 144 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 96 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:130)
-  n2: 96 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:29)
-   n1: 72 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-    n1: 72 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 96 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:130)
+  n2: 96 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:29)
+   n1: 72 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+    n1: 72 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
      n0: 72 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
-   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
     n0: 24 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
   n0: 48 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 48 0x10EA84: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 48 0x10EA2C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 48 0x10E997: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 48 0x10E8CC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:55)
-     n1: 48 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
-      n1: 48 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
-       n1: 48 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:760)
-        n1: 48 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
-         n0: 48 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
+ n1: 48 0x10EB04: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 48 0x10EAAC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 48 0x10EA17: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 48 0x10E9AC: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 48 0x10E96C: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:34)
+      n1: 48 0x10E8CC: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:43)
+       n1: 48 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
+        n1: 48 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
+         n1: 48 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:760)
+          n1: 48 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
+           n0: 48 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
  n0: 0 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=21
 #-----------
-time=1922208
+time=1916469
 mem_heap_B=320
 mem_heap_extra_B=104
 mem_stacks_B=0
@@ -259,7 +265,7 @@ heap_tree=empty
 #-----------
 snapshot=22
 #-----------
-time=1922927
+time=1917188
 mem_heap_B=368
 mem_heap_extra_B=112
 mem_stacks_B=0
@@ -267,7 +273,7 @@ heap_tree=empty
 #-----------
 snapshot=23
 #-----------
-time=1922986
+time=1917247
 mem_heap_B=392
 mem_heap_extra_B=128
 mem_stacks_B=0
@@ -275,7 +281,7 @@ heap_tree=empty
 #-----------
 snapshot=24
 #-----------
-time=1924209
+time=1918470
 mem_heap_B=440
 mem_heap_extra_B=136
 mem_stacks_B=0
@@ -283,7 +289,7 @@ heap_tree=empty
 #-----------
 snapshot=25
 #-----------
-time=1924268
+time=1918529
 mem_heap_B=464
 mem_heap_extra_B=152
 mem_stacks_B=0
@@ -291,7 +297,7 @@ heap_tree=empty
 #-----------
 snapshot=26
 #-----------
-time=1925164
+time=1919441
 mem_heap_B=472
 mem_heap_extra_B=168
 mem_stacks_B=0
@@ -299,7 +305,7 @@ heap_tree=empty
 #-----------
 snapshot=27
 #-----------
-time=1928093
+time=1922384
 mem_heap_B=520
 mem_heap_extra_B=176
 mem_stacks_B=0
@@ -307,7 +313,7 @@ heap_tree=empty
 #-----------
 snapshot=28
 #-----------
-time=1928152
+time=1922443
 mem_heap_B=544
 mem_heap_extra_B=192
 mem_stacks_B=0
@@ -315,7 +321,7 @@ heap_tree=empty
 #-----------
 snapshot=29
 #-----------
-time=1929048
+time=1923355
 mem_heap_B=552
 mem_heap_extra_B=208
 mem_stacks_B=0
@@ -323,41 +329,43 @@ heap_tree=empty
 #-----------
 snapshot=30
 #-----------
-time=1931977
+time=1926298
 mem_heap_B=600
 mem_heap_extra_B=216
 mem_stacks_B=0
 heap_tree=detailed
 n5: 600 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 336 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-  n2: 336 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 336 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+  n2: 336 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
    n0: 192 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
    n0: 144 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
- n1: 168 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:130)
-  n2: 168 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:29)
-   n1: 144 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-    n2: 144 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 168 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:130)
+  n2: 168 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:29)
+   n1: 144 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+    n2: 144 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
      n0: 96 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
      n0: 48 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
-   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
     n0: 24 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
   n0: 48 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 48 0x10EA84: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 48 0x10EA2C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 48 0x10E997: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 48 0x10E8CC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:55)
-     n1: 48 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
-      n1: 48 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
-       n1: 48 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:760)
-        n2: 48 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
-         n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
-         n0: 16 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
+ n1: 48 0x10EB04: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 48 0x10EAAC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 48 0x10EA17: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 48 0x10E9AC: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 48 0x10E96C: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:34)
+      n1: 48 0x10E8CC: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:43)
+       n1: 48 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
+        n1: 48 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
+         n1: 48 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:760)
+          n2: 48 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
+           n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
+           n0: 16 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
  n0: 0 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=31
 #-----------
-time=1932036
+time=1926357
 mem_heap_B=624
 mem_heap_extra_B=232
 mem_stacks_B=0
@@ -365,7 +373,7 @@ heap_tree=empty
 #-----------
 snapshot=32
 #-----------
-time=1932932
+time=1927269
 mem_heap_B=632
 mem_heap_extra_B=248
 mem_stacks_B=0
@@ -373,7 +381,7 @@ heap_tree=empty
 #-----------
 snapshot=33
 #-----------
-time=1935861
+time=1930212
 mem_heap_B=680
 mem_heap_extra_B=256
 mem_stacks_B=0
@@ -381,7 +389,7 @@ heap_tree=empty
 #-----------
 snapshot=34
 #-----------
-time=1935920
+time=1930271
 mem_heap_B=704
 mem_heap_extra_B=272
 mem_stacks_B=0
@@ -389,7 +397,7 @@ heap_tree=empty
 #-----------
 snapshot=35
 #-----------
-time=1936816
+time=1931183
 mem_heap_B=712
 mem_heap_extra_B=288
 mem_stacks_B=0
@@ -397,7 +405,7 @@ heap_tree=empty
 #-----------
 snapshot=36
 #-----------
-time=1939745
+time=1934126
 mem_heap_B=760
 mem_heap_extra_B=296
 mem_stacks_B=0
@@ -405,7 +413,7 @@ heap_tree=empty
 #-----------
 snapshot=37
 #-----------
-time=1939804
+time=1934185
 mem_heap_B=784
 mem_heap_extra_B=312
 mem_stacks_B=0
@@ -413,7 +421,7 @@ heap_tree=empty
 #-----------
 snapshot=38
 #-----------
-time=1940700
+time=1935097
 mem_heap_B=792
 mem_heap_extra_B=328
 mem_stacks_B=0
@@ -421,7 +429,7 @@ heap_tree=empty
 #-----------
 snapshot=39
 #-----------
-time=1943629
+time=1938040
 mem_heap_B=840
 mem_heap_extra_B=336
 mem_stacks_B=0
@@ -429,41 +437,43 @@ heap_tree=empty
 #-----------
 snapshot=40
 #-----------
-time=1943688
+time=1938099
 mem_heap_B=864
 mem_heap_extra_B=352
 mem_stacks_B=0
 heap_tree=detailed
 n5: 864 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 480 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-  n2: 480 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 480 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+  n2: 480 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
    n0: 288 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
    n0: 192 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 264 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:130)
-  n2: 264 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:29)
-   n1: 240 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-    n2: 240 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 264 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:130)
+  n2: 264 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:29)
+   n1: 240 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+    n2: 240 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
      n0: 144 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
      n0: 96 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
-   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
     n0: 24 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 72 0x10EA84: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 72 0x10EA2C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 72 0x10E997: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 72 0x10E8CC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:55)
-     n1: 72 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
-      n1: 72 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
-       n1: 72 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:760)
-        n2: 72 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
-         n0: 40 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
-         n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 72 0x10EB04: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 72 0x10EAAC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 72 0x10EA17: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 72 0x10E9AC: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 72 0x10E96C: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:34)
+      n1: 72 0x10E8CC: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:43)
+       n1: 72 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
+        n1: 72 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
+         n1: 72 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:760)
+          n2: 72 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
+           n0: 40 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
+           n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
+ n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
   n0: 48 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
  n0: 0 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=41
 #-----------
-time=1944584
+time=1939011
 mem_heap_B=872
 mem_heap_extra_B=368
 mem_stacks_B=0
@@ -471,7 +481,7 @@ heap_tree=empty
 #-----------
 snapshot=42
 #-----------
-time=1947513
+time=1941954
 mem_heap_B=920
 mem_heap_extra_B=376
 mem_stacks_B=0
@@ -479,7 +489,7 @@ heap_tree=empty
 #-----------
 snapshot=43
 #-----------
-time=1947572
+time=1942013
 mem_heap_B=944
 mem_heap_extra_B=392
 mem_stacks_B=0
@@ -487,7 +497,7 @@ heap_tree=empty
 #-----------
 snapshot=44
 #-----------
-time=1948468
+time=1942925
 mem_heap_B=952
 mem_heap_extra_B=408
 mem_stacks_B=0
@@ -495,7 +505,7 @@ heap_tree=empty
 #-----------
 snapshot=45
 #-----------
-time=1951397
+time=1945868
 mem_heap_B=1000
 mem_heap_extra_B=416
 mem_stacks_B=0
@@ -503,7 +513,7 @@ heap_tree=empty
 #-----------
 snapshot=46
 #-----------
-time=1951456
+time=1945927
 mem_heap_B=1024
 mem_heap_extra_B=432
 mem_stacks_B=0
@@ -511,7 +521,7 @@ heap_tree=empty
 #-----------
 snapshot=47
 #-----------
-time=1952352
+time=1946839
 mem_heap_B=1032
 mem_heap_extra_B=448
 mem_stacks_B=0
@@ -519,7 +529,7 @@ heap_tree=empty
 #-----------
 snapshot=48
 #-----------
-time=1955281
+time=1949782
 mem_heap_B=1080
 mem_heap_extra_B=456
 mem_stacks_B=0
@@ -527,7 +537,7 @@ heap_tree=empty
 #-----------
 snapshot=49
 #-----------
-time=1955340
+time=1949841
 mem_heap_B=1104
 mem_heap_extra_B=472
 mem_stacks_B=0
@@ -535,41 +545,43 @@ heap_tree=empty
 #-----------
 snapshot=50
 #-----------
-time=1956236
+time=1950753
 mem_heap_B=1112
 mem_heap_extra_B=488
 mem_stacks_B=0
 heap_tree=detailed
 n5: 1112 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 624 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-  n2: 624 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 624 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+  n2: 624 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
    n0: 432 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
    n0: 192 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 336 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:130)
-  n2: 336 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:29)
-   n1: 312 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-    n2: 312 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 336 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:130)
+  n2: 336 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:29)
+   n1: 312 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+    n2: 312 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
      n0: 216 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
      n0: 96 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
-   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
     n0: 24 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 104 0x10EA84: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 104 0x10EA2C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 104 0x10E997: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 104 0x10E8CC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:55)
-     n1: 104 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
-      n1: 104 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
-       n1: 104 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:760)
-        n2: 104 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
-         n0: 72 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
-         n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 104 0x10EB04: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 104 0x10EAAC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 104 0x10EA17: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 104 0x10E9AC: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 104 0x10E96C: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:34)
+      n1: 104 0x10E8CC: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:43)
+       n1: 104 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
+        n1: 104 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
+         n1: 104 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:760)
+          n2: 104 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
+           n0: 72 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
+           n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
+ n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
   n0: 48 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
  n0: 0 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=51
 #-----------
-time=1959165
+time=1953696
 mem_heap_B=1160
 mem_heap_extra_B=496
 mem_stacks_B=0
@@ -577,7 +589,7 @@ heap_tree=empty
 #-----------
 snapshot=52
 #-----------
-time=1959224
+time=1953755
 mem_heap_B=1184
 mem_heap_extra_B=512
 mem_stacks_B=0
@@ -585,7 +597,7 @@ heap_tree=empty
 #-----------
 snapshot=53
 #-----------
-time=1960120
+time=1954667
 mem_heap_B=1192
 mem_heap_extra_B=528
 mem_stacks_B=0
@@ -593,41 +605,43 @@ heap_tree=empty
 #-----------
 snapshot=54
 #-----------
-time=1963128
+time=1957689
 mem_heap_B=1192
 mem_heap_extra_B=528
 mem_stacks_B=0
 heap_tree=peak
 n5: 1192 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 672 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-  n2: 672 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 672 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+  n2: 672 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
    n0: 480 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
    n0: 192 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 360 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:130)
-  n2: 360 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:29)
-   n1: 336 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-    n2: 336 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 360 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:130)
+  n2: 360 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:29)
+   n1: 336 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+    n2: 336 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
      n0: 240 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
      n0: 96 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
-   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
     n0: 24 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 112 0x10EA84: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 112 0x10EA2C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 112 0x10E997: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 112 0x10E8CC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:55)
-     n1: 112 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
-      n1: 112 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
-       n1: 112 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:760)
-        n2: 112 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
-         n0: 80 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
-         n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 112 0x10EB04: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 112 0x10EAAC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 112 0x10EA17: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 112 0x10E9AC: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 112 0x10E96C: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:34)
+      n1: 112 0x10E8CC: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:43)
+       n1: 112 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
+        n1: 112 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
+         n1: 112 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:760)
+          n2: 112 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
+           n0: 80 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
+           n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
+ n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
   n0: 48 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
  n0: 0 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=55
 #-----------
-time=1963128
+time=1957689
 mem_heap_B=1168
 mem_heap_extra_B=512
 mem_stacks_B=0
@@ -635,7 +649,7 @@ heap_tree=empty
 #-----------
 snapshot=56
 #-----------
-time=1963186
+time=1957747
 mem_heap_B=1120
 mem_heap_extra_B=504
 mem_stacks_B=0
@@ -643,7 +657,7 @@ heap_tree=empty
 #-----------
 snapshot=57
 #-----------
-time=1963626
+time=1958187
 mem_heap_B=1096
 mem_heap_extra_B=488
 mem_stacks_B=0
@@ -651,7 +665,7 @@ heap_tree=empty
 #-----------
 snapshot=58
 #-----------
-time=1963684
+time=1958245
 mem_heap_B=1048
 mem_heap_extra_B=480
 mem_stacks_B=0
@@ -659,7 +673,7 @@ heap_tree=empty
 #-----------
 snapshot=59
 #-----------
-time=1964124
+time=1958685
 mem_heap_B=1024
 mem_heap_extra_B=464
 mem_stacks_B=0
@@ -667,7 +681,7 @@ heap_tree=empty
 #-----------
 snapshot=60
 #-----------
-time=1964182
+time=1958743
 mem_heap_B=976
 mem_heap_extra_B=456
 mem_stacks_B=0
@@ -675,7 +689,7 @@ heap_tree=empty
 #-----------
 snapshot=61
 #-----------
-time=1966272
+time=1960833
 mem_heap_B=952
 mem_heap_extra_B=440
 mem_stacks_B=0
@@ -683,7 +697,7 @@ heap_tree=empty
 #-----------
 snapshot=62
 #-----------
-time=1966330
+time=1960891
 mem_heap_B=904
 mem_heap_extra_B=432
 mem_stacks_B=0
@@ -691,7 +705,7 @@ heap_tree=empty
 #-----------
 snapshot=63
 #-----------
-time=1966989
+time=1961550
 mem_heap_B=896
 mem_heap_extra_B=416
 mem_stacks_B=0
@@ -699,41 +713,43 @@ heap_tree=empty
 #-----------
 snapshot=64
 #-----------
-time=1967113
+time=1961674
 mem_heap_B=872
 mem_heap_extra_B=400
 mem_stacks_B=0
 heap_tree=detailed
 n5: 872 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 480 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-  n2: 480 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 480 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+  n2: 480 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
    n0: 432 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
    n0: 48 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 240 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:130)
-  n2: 240 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:29)
-   n1: 216 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-    n2: 216 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 240 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:130)
+  n2: 240 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:29)
+   n1: 216 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+    n2: 216 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
      n0: 192 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
      n0: 24 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
-   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
     n0: 24 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 104 0x10EA84: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 104 0x10EA2C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 104 0x10E997: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 104 0x10E8CC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:55)
-     n1: 104 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
-      n1: 104 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
-       n1: 104 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:760)
-        n2: 104 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
-         n0: 72 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
-         n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 104 0x10EB04: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 104 0x10EAAC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 104 0x10EA17: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 104 0x10E9AC: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 104 0x10E96C: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:34)
+      n1: 104 0x10E8CC: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:43)
+       n1: 104 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
+        n1: 104 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
+         n1: 104 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:760)
+          n2: 104 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
+           n0: 72 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
+           n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
+ n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
   n0: 48 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
  n0: 0 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=65
 #-----------
-time=1967171
+time=1961732
 mem_heap_B=824
 mem_heap_extra_B=392
 mem_stacks_B=0
@@ -741,7 +757,7 @@ heap_tree=empty
 #-----------
 snapshot=66
 #-----------
-time=1967830
+time=1962391
 mem_heap_B=816
 mem_heap_extra_B=376
 mem_stacks_B=0
@@ -749,7 +765,7 @@ heap_tree=empty
 #-----------
 snapshot=67
 #-----------
-time=1967954
+time=1962515
 mem_heap_B=792
 mem_heap_extra_B=360
 mem_stacks_B=0
@@ -757,7 +773,7 @@ heap_tree=empty
 #-----------
 snapshot=68
 #-----------
-time=1968012
+time=1962573
 mem_heap_B=744
 mem_heap_extra_B=352
 mem_stacks_B=0
@@ -765,7 +781,7 @@ heap_tree=empty
 #-----------
 snapshot=69
 #-----------
-time=1968671
+time=1963232
 mem_heap_B=736
 mem_heap_extra_B=336
 mem_stacks_B=0
@@ -773,7 +789,7 @@ heap_tree=empty
 #-----------
 snapshot=70
 #-----------
-time=1968795
+time=1963356
 mem_heap_B=712
 mem_heap_extra_B=320
 mem_stacks_B=0
@@ -781,7 +797,7 @@ heap_tree=empty
 #-----------
 snapshot=71
 #-----------
-time=1968853
+time=1963414
 mem_heap_B=664
 mem_heap_extra_B=312
 mem_stacks_B=0
@@ -789,7 +805,7 @@ heap_tree=empty
 #-----------
 snapshot=72
 #-----------
-time=1969512
+time=1964073
 mem_heap_B=656
 mem_heap_extra_B=296
 mem_stacks_B=0
@@ -797,7 +813,7 @@ heap_tree=empty
 #-----------
 snapshot=73
 #-----------
-time=1969636
+time=1964197
 mem_heap_B=632
 mem_heap_extra_B=280
 mem_stacks_B=0
@@ -805,41 +821,43 @@ heap_tree=empty
 #-----------
 snapshot=74
 #-----------
-time=1969694
+time=1964255
 mem_heap_B=584
 mem_heap_extra_B=272
 mem_stacks_B=0
 heap_tree=detailed
 n5: 584 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 288 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-  n2: 288 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 288 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+  n2: 288 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
    n0: 240 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
    n0: 48 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 168 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:130)
-  n2: 168 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:29)
-   n1: 144 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-    n2: 144 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 168 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:130)
+  n2: 168 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:29)
+   n1: 144 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+    n2: 144 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
      n0: 120 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
      n0: 24 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
-   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
     n0: 24 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 80 0x10EA84: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 80 0x10EA2C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 80 0x10E997: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 80 0x10E8CC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:55)
-     n1: 80 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
-      n1: 80 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
-       n1: 80 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:760)
-        n2: 80 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
-         n0: 48 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
-         n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 80 0x10EB04: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 80 0x10EAAC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 80 0x10EA17: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 80 0x10E9AC: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 80 0x10E96C: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:34)
+      n1: 80 0x10E8CC: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:43)
+       n1: 80 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
+        n1: 80 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
+         n1: 80 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:760)
+          n2: 80 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
+           n0: 48 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
+           n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
+ n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
   n0: 48 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
  n0: 0 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=75
 #-----------
-time=1970353
+time=1964914
 mem_heap_B=576
 mem_heap_extra_B=256
 mem_stacks_B=0
@@ -847,7 +865,7 @@ heap_tree=empty
 #-----------
 snapshot=76
 #-----------
-time=1970477
+time=1965038
 mem_heap_B=552
 mem_heap_extra_B=240
 mem_stacks_B=0
@@ -855,7 +873,7 @@ heap_tree=empty
 #-----------
 snapshot=77
 #-----------
-time=1970535
+time=1965096
 mem_heap_B=504
 mem_heap_extra_B=232
 mem_stacks_B=0
@@ -863,7 +881,7 @@ heap_tree=empty
 #-----------
 snapshot=78
 #-----------
-time=1971194
+time=1965755
 mem_heap_B=496
 mem_heap_extra_B=216
 mem_stacks_B=0
@@ -871,7 +889,7 @@ heap_tree=empty
 #-----------
 snapshot=79
 #-----------
-time=1971318
+time=1965879
 mem_heap_B=472
 mem_heap_extra_B=200
 mem_stacks_B=0
@@ -879,7 +897,7 @@ heap_tree=empty
 #-----------
 snapshot=80
 #-----------
-time=1971376
+time=1965937
 mem_heap_B=424
 mem_heap_extra_B=192
 mem_stacks_B=0
@@ -887,7 +905,7 @@ heap_tree=empty
 #-----------
 snapshot=81
 #-----------
-time=1972035
+time=1966596
 mem_heap_B=416
 mem_heap_extra_B=176
 mem_stacks_B=0
@@ -895,7 +913,7 @@ heap_tree=empty
 #-----------
 snapshot=82
 #-----------
-time=1972159
+time=1966720
 mem_heap_B=392
 mem_heap_extra_B=160
 mem_stacks_B=0
@@ -903,7 +921,7 @@ heap_tree=empty
 #-----------
 snapshot=83
 #-----------
-time=1972217
+time=1966778
 mem_heap_B=344
 mem_heap_extra_B=152
 mem_stacks_B=0
@@ -911,41 +929,43 @@ heap_tree=empty
 #-----------
 snapshot=84
 #-----------
-time=1972876
+time=1967437
 mem_heap_B=336
 mem_heap_extra_B=136
 mem_stacks_B=0
 heap_tree=detailed
 n5: 336 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 144 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-  n2: 144 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 144 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+  n2: 144 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
    n0: 96 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
    n0: 48 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
- n1: 96 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:130)
-  n2: 96 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:29)
-   n1: 72 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-    n2: 72 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 96 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:130)
+  n2: 96 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:29)
+   n1: 72 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+    n2: 72 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
      n0: 48 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
      n0: 24 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
-   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+   n1: 24 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
     n0: 24 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
   n0: 48 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 48 0x10EA84: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 48 0x10EA2C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 48 0x10E997: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 48 0x10E8CC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:55)
-     n1: 48 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
-      n1: 48 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
-       n1: 48 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:760)
-        n2: 48 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
-         n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
-         n0: 16 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
+ n1: 48 0x10EB04: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 48 0x10EAAC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 48 0x10EA17: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 48 0x10E9AC: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 48 0x10E96C: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:34)
+      n1: 48 0x10E8CC: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:43)
+       n1: 48 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
+        n1: 48 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
+         n1: 48 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:760)
+          n2: 48 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
+           n0: 32 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
+           n0: 16 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
  n0: 0 in 2 places, all below massif's threshold (1.00%)
 #-----------
 snapshot=85
 #-----------
-time=1973000
+time=1967561
 mem_heap_B=312
 mem_heap_extra_B=120
 mem_stacks_B=0
@@ -953,7 +973,7 @@ heap_tree=empty
 #-----------
 snapshot=86
 #-----------
-time=1973058
+time=1967619
 mem_heap_B=264
 mem_heap_extra_B=112
 mem_stacks_B=0
@@ -961,7 +981,7 @@ heap_tree=empty
 #-----------
 snapshot=87
 #-----------
-time=1973717
+time=1968278
 mem_heap_B=256
 mem_heap_extra_B=96
 mem_stacks_B=0
@@ -969,7 +989,7 @@ heap_tree=empty
 #-----------
 snapshot=88
 #-----------
-time=1973841
+time=1968402
 mem_heap_B=232
 mem_heap_extra_B=80
 mem_stacks_B=0
@@ -977,7 +997,7 @@ heap_tree=empty
 #-----------
 snapshot=89
 #-----------
-time=1973899
+time=1968460
 mem_heap_B=184
 mem_heap_extra_B=72
 mem_stacks_B=0
@@ -985,7 +1005,7 @@ heap_tree=empty
 #-----------
 snapshot=90
 #-----------
-time=1974558
+time=1969119
 mem_heap_B=176
 mem_heap_extra_B=56
 mem_stacks_B=0
@@ -993,7 +1013,7 @@ heap_tree=empty
 #-----------
 snapshot=91
 #-----------
-time=1974682
+time=1969243
 mem_heap_B=152
 mem_heap_extra_B=40
 mem_stacks_B=0
@@ -1001,7 +1021,7 @@ heap_tree=empty
 #-----------
 snapshot=92
 #-----------
-time=1974740
+time=1969301
 mem_heap_B=104
 mem_heap_extra_B=32
 mem_stacks_B=0
@@ -1009,7 +1029,7 @@ heap_tree=empty
 #-----------
 snapshot=93
 #-----------
-time=1975609
+time=1970170
 mem_heap_B=72
 mem_heap_extra_B=24
 mem_stacks_B=0
@@ -1017,49 +1037,51 @@ heap_tree=empty
 #-----------
 snapshot=94
 #-----------
-time=1975733
+time=1970294
 mem_heap_B=48
 mem_heap_extra_B=8
 mem_stacks_B=0
 heap_tree=detailed
 n6: 48 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 48 0x10A4E5: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
   n0: 48 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 0 0x10CE91: stlplus::safe_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::safe_iterator(stlplus::ntree<unsigned char> const*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:277)
-  n1: 0 0x10CE5C: stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*>::ntree_iterator(stlplus::ntree<unsigned char> const*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:108)
-   n1: 0 0x10B359: stlplus::ntree<unsigned char>::root() (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:571)
-    n1: 0 0x10B0BD: stlplus::ntree<unsigned char>::erase() (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:896)
-     n1: 0 0x10A4DB: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:745)
+ n1: 0 0x10CE91: stlplus::safe_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::safe_iterator(stlplus::ntree<unsigned char> const*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:277)
+  n1: 0 0x10CE5C: stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*>::ntree_iterator(stlplus::ntree<unsigned char> const*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:108)
+   n1: 0 0x10B359: stlplus::ntree<unsigned char>::root() (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:571)
+    n1: 0 0x10B0BD: stlplus::ntree<unsigned char>::erase() (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:896)
+     n1: 0 0x10A4DB: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:745)
       n0: 0 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
- n1: 0 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:130)
-  n2: 0 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:29)
-   n1: 0 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:746)
+ n1: 0 0x10CF35: stlplus::master_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::master_iterator(stlplus::ntree<unsigned char> const*, stlplus::ntree_node<unsigned char>*) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:130)
+  n2: 0 0x10B167: stlplus::ntree_node<unsigned char>::ntree_node(stlplus::ntree<unsigned char> const*, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:29)
+   n1: 0 0x10A4FC: stlplus::ntree<unsigned char>::insert(unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:746)
     n0: 0 0x10A2C0: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:9)
-   n1: 0 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-    n2: 0 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+   n1: 0 0x10D2E2: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+    n2: 0 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
      n0: 0 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
      n0: 0 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
- n1: 0 0x10D18D: stlplus::safe_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::safe_iterator() (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/safe_iterator.tpp:176)
-  n1: 0 0x10A564: stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*>::ntree_iterator() (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.hpp:65)
+ n1: 0 0x10D18D: stlplus::safe_iterator<stlplus::ntree<unsigned char>, stlplus::ntree_node<unsigned char> >::safe_iterator() (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/safe_iterator.tpp:176)
+  n1: 0 0x10A564: stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*>::ntree_iterator() (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.hpp:65)
    n0: 0 0x10A2CE: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:10)
- n1: 0 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:759)
-  n2: 0 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
+ n1: 0 0x10D2C8: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:759)
+  n2: 0 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
    n0: 0 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
    n0: 0 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
- n1: 0 0x10EA84: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 0 0x10EA2C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 0 0x10E997: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 0 0x10E8CC: std::__1::__allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:55)
-     n1: 0 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
-      n1: 0 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
-       n1: 0 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:760)
-        n2: 0 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/b/stlpl1cc13fab20dfa/p/include/stlplus/containers/ntree.tpp:774)
-         n0: 0 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
-         n0: 0 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
+ n1: 0 0x10EB04: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 0 0x10EAAC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 0 0x10EA17: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 0 0x10E9AC: std::__1::allocator<stlplus::ntree_node<unsigned char>*>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 0 0x10E96C: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:34)
+      n1: 0 0x10E8CC: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<stlplus::ntree_node<unsigned char>*> >(std::__1::allocator<stlplus::ntree_node<unsigned char>*>&, unsigned long) (allocate_at_least.h:43)
+       n1: 0 0x10DAD5: std::__1::__split_buffer<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&>::__split_buffer(unsigned long, unsigned long, std::__1::allocator<stlplus::ntree_node<unsigned char>*>&) (__split_buffer:379)
+        n1: 0 0x10D5EC: std::__1::vector<stlplus::ntree_node<unsigned char>*, std::__1::allocator<stlplus::ntree_node<unsigned char>*> >::insert(std::__1::__wrap_iter<stlplus::ntree_node<unsigned char>* const*>, stlplus::ntree_node<unsigned char>* const&) (vector:1769)
+         n1: 0 0x10D356: stlplus::ntree<unsigned char>::insert(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned int, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:760)
+          n2: 0 0x10A5C2: stlplus::ntree<unsigned char>::append(stlplus::ntree_iterator<unsigned char, unsigned char&, unsigned char*> const&, unsigned char const&) (.conan2/p/stlpl2dcc3ef280455/p/include/stlplus/containers/ntree.tpp:774)
+           n0: 0 0x10A2FF: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:14)
+           n0: 0 0x10A3A9: main (measure/tree_with_n_nodes_in_level_1_in_other_levels_only_one_node_uint8_t/stlplus_tree/main4.cxx:19)
 #-----------
 snapshot=95
 #-----------
-time=1975791
+time=1970352
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=0
