@@ -4,6 +4,7 @@
 int
 main ()
 {
-  auto data = std::vector<small_memory_tree::Node<uint8_t, uint16_t> > (1025);
+  auto values = std::vector<uint8_t> (1025);
+  auto childrenOffsetEnds = std::vector<uint16_t> (1025);
   return 0;
 }

@@ -12,33 +12,50 @@ heap_tree=empty
 #-----------
 snapshot=1
 #-----------
-time=1897262
-mem_heap_B=34
-mem_heap_extra_B=22
+time=1897270
+mem_heap_B=17
+mem_heap_extra_B=23
 mem_stacks_B=0
 heap_tree=empty
 #-----------
 snapshot=2
 #-----------
-time=1902803
+time=1899205
 mem_heap_B=34
-mem_heap_extra_B=22
+mem_heap_extra_B=46
 mem_stacks_B=0
-heap_tree=peak
-n1: 34 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
- n1: 34 0x109D74: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
-  n1: 34 0x109CFC: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
-   n1: 34 0x109C66: std::__1::allocator<small_memory_tree::Node<unsigned char, unsigned char> >::allocate[abi:ue170006](unsigned long) (allocator.h:114)
-    n1: 34 0x109BFC: std::__1::allocator<small_memory_tree::Node<unsigned char, unsigned char> >::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
-     n1: 34 0x109BBC: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<small_memory_tree::Node<unsigned char, unsigned char> > >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<small_memory_tree::Node<unsigned char, unsigned char> > >(std::__1::allocator<small_memory_tree::Node<unsigned char, unsigned char> >&, unsigned long) (allocate_at_least.h:34)
-      n1: 34 0x10984C: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<small_memory_tree::Node<unsigned char, unsigned char> > >(std::__1::allocator<small_memory_tree::Node<unsigned char, unsigned char> >&, unsigned long) (allocate_at_least.h:43)
-       n1: 34 0x109512: std::__1::vector<small_memory_tree::Node<unsigned char, unsigned char>, std::__1::allocator<small_memory_tree::Node<unsigned char, unsigned char> > >::__vallocate[abi:ue170006](unsigned long) (vector:756)
-        n1: 34 0x1092FE: std::__1::vector<small_memory_tree::Node<unsigned char, unsigned char>, std::__1::allocator<small_memory_tree::Node<unsigned char, unsigned char> > >::vector(unsigned long) (vector:1195)
-         n0: 34 0x10923D: main (measure/root_with_n_children_uint8_t/small_memory_tree/main16.cxx:7)
+heap_tree=empty
 #-----------
 snapshot=3
 #-----------
-time=1902803
+time=1903112
+mem_heap_B=34
+mem_heap_extra_B=46
+mem_stacks_B=0
+heap_tree=peak
+n1: 34 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 34 0x109DB4: void* std::__1::__libcpp_operator_new[abi:ue170006]<unsigned long>(unsigned long) (new:268)
+  n1: 34 0x109D3C: std::__1::__libcpp_allocate[abi:ue170006](unsigned long, unsigned long) (new:294)
+   n1: 34 0x109CA7: std::__1::allocator<unsigned char>::allocate[abi:ue170006](unsigned long) (allocator.h:114)
+    n1: 34 0x109C3C: std::__1::allocator<unsigned char>::allocate_at_least[abi:ue170006](unsigned long) (allocator.h:121)
+     n1: 34 0x109BFC: std::__1::allocation_result<std::__1::allocator_traits<std::__1::allocator<unsigned char> >::pointer> std::__1::allocate_at_least[abi:ue170006]<std::__1::allocator<unsigned char> >(std::__1::allocator<unsigned char>&, unsigned long) (allocate_at_least.h:34)
+      n1: 34 0x10988C: auto std::__1::__allocate_at_least[abi:ue170006]<std::__1::allocator<unsigned char> >(std::__1::allocator<unsigned char>&, unsigned long) (allocate_at_least.h:43)
+       n1: 34 0x109552: std::__1::vector<unsigned char, std::__1::allocator<unsigned char> >::__vallocate[abi:ue170006](unsigned long) (vector:756)
+        n2: 34 0x10933E: std::__1::vector<unsigned char, std::__1::allocator<unsigned char> >::vector(unsigned long) (vector:1195)
+         n0: 17 0x10922D: main (measure/root_with_n_children_uint8_t/small_memory_tree/main16.cxx:7)
+         n0: 17 0x10923A: main (measure/root_with_n_children_uint8_t/small_memory_tree/main16.cxx:8)
+#-----------
+snapshot=4
+#-----------
+time=1903112
+mem_heap_B=17
+mem_heap_extra_B=23
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1904774
 mem_heap_B=0
 mem_heap_extra_B=0
 mem_stacks_B=0
